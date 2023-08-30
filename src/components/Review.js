@@ -1,10 +1,10 @@
 import React from "react";
-import Header from ".//header/Header";
+
 
 function Review() {
     return (
-        <div>
-            <Header />
+        <div id="Review">
+        
             <div className="rgba(128, 31, 239, 1">
             <h1>see what our trusted customers are saying</h1>
                 <p>your review could be next</p>

@@ -1,6 +1,8 @@
 import { LiaFacebookF, LiaTwitter } from "react-icons/lia";
 import { TiSocialInstagram } from "react-icons/ti";
 import "./Footer.css";
+// import logo from "../../images/logo.png";
+import logo from "../images/logo.png"
 function Footer() {
   return (
     <div className="footer">
@@ -10,7 +12,7 @@ function Footer() {
             <div className=" w-[100%]   md:w-[70%] md:h-[100%] md:flex md:justify-center md:items-center ">
               <section className="md:w-[90%] w-[100%] h-[300px] flex flex-col items-center md:items-start text-[18px] ">
                 <div className="w-[160px]  h-[100px] md:text-left ">
-                  <img src="" class="w-[100%]  h-[100%] " alt="logo" />
+                  <img src={logo} class="w-[100%]  h-[100%] " alt="logo" />
                 </div>
                 <p className="text-center md:text-left">
                   our vision is to provide convenience <br /> and help increase

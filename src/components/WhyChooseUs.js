@@ -2,6 +2,7 @@ import "./WhyChoose.css";
 import { IoCallSharp } from "react-icons/io5";
 import { HiLocationMarker } from "react-icons/hi";
 import { ImPriceTags } from "react-icons/im";
+import logo from "../images/logo.png"
 
 function WhyChooseUs() {
   return (
@@ -9,7 +10,7 @@ function WhyChooseUs() {
       id="choose"
       className="why bg-gradient-to-r from-purple-500 to-pink-600"
     >
-      {/* <Header /> */}
+    
       <div className="whychooseus ">
         <div className="box1">
           <h1>THIS IS WHAT STANDS US OUT</h1>
@@ -21,7 +22,7 @@ function WhyChooseUs() {
         <div className="box2">
           <div className="box3">
             <div className="image">
-              <img src="./images/car.png" alt="fghjk" />
+              <img src={logo} width="900px" alt="fghjk" />
             </div>
             <div className="box3-section2">
               <div className="section2">

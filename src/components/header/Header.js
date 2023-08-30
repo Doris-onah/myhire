@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
@@ -9,19 +9,23 @@ import "./Header.css";
 
 function Header() {
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
+  const whyChoose = () => {
+    navigate("/")
+  }
 
   return (
-    <div className="header-container bg-gradient-to-r from-purple-600 to-pink-500">
+    <div className="header-container bg-gradient-to-r from-purple-600 to-pink-600">
       <div className="header">
         <div className="logo">
           <img src={logo} width="100px" height="100px" alt="logo" />
         </div>
 
-        <nav className={"big"}>
-          <div className="nav-links">
-            <ul className="big ">
+        <nav className={show? "small" : "big"}>
+          <div className="big">
+            <ul className="nav-links ">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" >Home</Link>
               </li>
 
               <li>
@@ -33,11 +37,15 @@ function Header() {
               </li>
 
               <li>
-                <a href="#choose">WhyChooseUs</a>
+               <span onClick={whyChoose} >
+                 <a href="#choose">WhyChooseUs</a>
+                  </span>
               </li>
 
               <li>
-                <Link to="/Review">Review</Link>
+                <span onClick={whyChoose}>
+                  <a href="#Review">Review</a>
+                  </span>
               </li>
 
               <li className=" w-[2px] md:h-[20px] md:bg-gray-200 md:border-0 md:dark:bg "></li>
@@ -52,44 +60,43 @@ function Header() {
             </ul>
           </div>
 
-          <ul className="small">
-            <li>
-              <Link to="/" onClick={() => setShow(!show)}>
-                Home
-              </Link>
-            </li>
+          <div className="small">
+            <ul className="nav-links ">
+              <li>
+                <Link to="/" onClick={() => {setShow(!show)}}>Home</Link>
+              </li>
 
-            <li>
-              <Link to="/HowItWorks" onClick={() => setShow(!show)}>
-                HowItWorks
-              </Link>
-            </li>
+              <li>
+                <Link to="/HowItWorks" onClick={() => {setShow(!show)}}>HowItWorks</Link>
+              </li>
 
-            <li>
-              <Link to="/RentalDetails" onClick={() => setShow(!show)}>
-                RentalDetails
-              </Link>
-            </li>
-            <li>
-              <Link to="/WhyChooseUs" onClick={() => setShow(!show)}>
-                WhyChooseUs
-              </Link>
-            </li>
+              <li>
+                <Link to="/RentalDetails" onClick={() => {setShow(!show)}}>RentalDetails</Link>
+              </li>
 
-            <li className=" md:w-px md:h-5 md:bg-gray-200 md:border-0 md:dark:bg "></li>
-            <li>
-              <Link to="/Register" onClick={() => setShow(!show)}>
-                Register
-              </Link>
-            </li>
-            <li>
-              <button className="bg-white border rounded-[4px] w-[70px]">
-                <Link to="/Login" onClick={() => setShow(!show)}>
-                  Log in
-                </Link>
-              </button>
-            </li>
-          </ul>
+              <li>
+               <span onClick={whyChoose} >
+                 <a href="#choose" onClick={() => {setShow(!show)}}>WhyChooseUs</a>
+                  </span>
+              </li>
+
+              <li>
+                <span onClick={whyChoose}>
+                  <a href="#Review" onClick={() => {setShow(!show)}}>Review</a>
+                  </span>
+              </li>
+
+              <li className=" w-[2px] md:h-[20px] md:bg-gray-200 md:border-0 md:dark:bg "></li>
+              <li>
+                <Link to="/Register" onClick={() => {setShow(!show)}}>Register</Link>
+              </li>
+              <li>
+                <button className="bg-white text-black border rounded-[4px] w-[70px]">
+                  <Link to="/Login" onClick={() => {setShow(!show)}}>Log in</Link>
+                </button>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <div className="navbar" onClick={() => setShow(!show)}>
@@ -99,7 +106,7 @@ function Header() {
             </button>
           ) : (
             <button className="p-1 border border-white-300 focus:outline-none font-8 text-[28px] text-white">
-              <GiHamburgerMenu />{" "}
+              <GiHamburgerMenu />
             </button>
           )}
         </div>

@@ -6,21 +6,23 @@ import Footer from "../Footer";
 import HeroSection from "./HeroSection";
 import Location from "../howitworks/Location";
 import WhyChooseUs from "../WhyChooseUs";
+import Review from "../Review";
 
 
 function HomePage() {
 
     return (
-        <div  className="homepage  w-full  bg-gradient-to-r from-purple-500 to-pink-500 font-plus-jakarta-sans">
+        <div  className="homepage  w-full  bg-gradient-to-r from-purple-600 to-pink-600 font-plus-jakarta-sans">
         
-          <div>
-          <Header />
+          <div >
+         <Header /> 
              
-          <HeroSection />
+         <HeroSection />
       
           <Booking />
           <Location />    
          <div id="choose"> <WhyChooseUs  /> </div>
+         <div id="Review"><Review/></div>
           <Footer />
      
       </div>
