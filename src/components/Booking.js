@@ -13,7 +13,7 @@ function Booking(){
     <span className="flex justify-center items-center   ">
             <div className="w-[100%]  h-[100%]">
                <span className="flex gap-4"> <div className="bg-gray-200 w-[25px] h-[25px] flex justify-center items-center rounded-[50%]">
-                <button className="bg-white w-[12px] h-[12px]  rounded-[50%]"></button></div><h1>PICK-UP</h1> </span>
+                <button title="btn-on" className="bg-white w-[12px] h-[12px]  rounded-[50%]"></button></div><h1>PICK-UP</h1> </span>
                  <h2 className=" font-semibold ">LOCATION</h2>
                <span className="flex justify-between items-center gap-4 ">select your city <GoChevronDown /></span>
             </div>
@@ -37,7 +37,7 @@ function Booking(){
         <span className="flex justify-center items-center  ">
             <div className="w-[100%]  h-[100%]  ">
                <span className="flex gap-4"> <div className="bg-gray-200 w-[25px] h-[25px] flex justify-center items-center rounded-[50%]">
-                <button className="bg-white w-[12px] h-[12px]  rounded-[50%]"></button></div><h1>DROP-OFF</h1> </span>
+                <button title="btn-off" className="bg-white w-[12px] h-[12px]  rounded-[50%]"></button></div><h1>DROP-OFF</h1> </span>
                <div > 
                 <h2 className=" font-semibold ">LOCATION</h2>
                <span className="flex justify-between items-center gap-4 ">select your city <GoChevronDown /></span>

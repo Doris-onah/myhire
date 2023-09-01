@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
-// import WhyChooseUs from "../WhyChooseUs";
 import logo from "../../images/logo.png";
 import "./Header.css";
 
@@ -55,9 +54,9 @@ function Header() {
                 <Link to="/Register">Register</Link>
               </li>
               <li>
-                <button className="bg-white text-black border rounded-[4px] w-[70px]" >
+                <div className="bg-white text-black border rounded-[4px] w-[70px] text-center" >
                   <Link to="/Login">Log in</Link>
-                </button>
+                </div>
               </li>
             </ul>
           </div>
@@ -95,9 +94,9 @@ function Header() {
                 <Link to="/Register" onClick={() => {setShow(!show)}}>Register</Link>
               </li>
               <li>
-                <button className="bg-white text-black border rounded-[4px] w-[70px]">
+                <div className="bg-white text-center text-black border rounded-[4px] w-[70px]">
                   <Link to="/Login" onClick={() => {setShow(!show)}}>Log in</Link>
-                </button>
+                </div>
               </li>
             </ul>
           </div>

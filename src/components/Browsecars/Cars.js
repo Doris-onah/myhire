@@ -1,12 +1,8 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
+
 
 function Cars() {
-    // const navigate = useNavigate();
-    // const car =() => {
-    //     navigate("Cars")
-    // }
     return (
         
             <div id="Cars" className="w-full h-[100%] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center">
@@ -30,13 +26,13 @@ function Cars() {
 
     <div className="flex flex items-between justify-center w-[100%] ">
 <ul className="flex text-2xl text-white items-between justify-center w-[100%] my-4">
-  <li className="w-full text-center hover:underline  hover:underline-offset-8 ">
+  <li className="w-full text-center  ">
 
     <Link to="/Cars/PopularCars" className="hidden md:block" >Popular Car </Link>
     <Link to="/Cars/PopularCars" className="md:hidden block text-[15px]" >Popular  </Link>
     </li>
 
-    <li className="w-full text-center hover:underline  hover:underline-offset-8 ">
+    <li className="w-full text-center  ">
         <Link to="/Cars/SuvsCars"  className="hidden md:block">Suvs & Truck</Link>
         <Link to="/Cars/SuvsCars" className="md:hidden block text-[15px]" >Large</Link>
         </li>

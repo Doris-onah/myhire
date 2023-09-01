@@ -8,7 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 function SuvsCars() {
    const [suv, setSuv] = useState([]);
-const [page, setPage] = useState(1)
+const [page, setPage] = useState(4)
 
 
 
@@ -25,14 +25,14 @@ useEffect(() => {
   }, []);
 
   const PER_PAGE = 8;
-  const pages = 5;
+  const pages = 10;
   // const total = users?.results?.length;
   const skip = page * PER_PAGE - PER_PAGE;
 
     return (
         <div id="PopularCars">
         <div className="flex w-full h-[100%]   md:grid md:grid-cols-4 gap-4 grid grid-cols-1">
-{suv?.results?.slice(skip, skip + PER_PAGE).map((suv , index) => {
+{suv?.results?.slice(skip, skip + PER_PAGE).map((suv, index) => {
     return(
 
 <div className=" md:w-[100%] md:h-[100%] h-[300px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center " key={`${suv.id}_${index}`} >
