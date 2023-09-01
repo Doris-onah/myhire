@@ -55,7 +55,7 @@ function Header() {
                 <Link to="/Register">Register</Link>
               </li>
               <li>
-                <button className="bg-white text-black border rounded-[4px] w-[70px]">
+                <button className="bg-white text-black border rounded-[4px] w-[70px]" >
                   <Link to="/Login">Log in</Link>
                 </button>
               </li>
@@ -105,11 +105,11 @@ function Header() {
 
         <div className="navbar" onClick={() => setShow(!show)}>
           {show ? (
-            <button className="p-1 border border-white-300 focus:outline-none text-[28px] text-white">
+            <button title="menu-close" className="p-1 border border-white-300 focus:outline-none text-[28px] text-white">
               <GrClose />
             </button>
           ) : (
-            <button className="p-1 border border-white-300 focus:outline-none font-8 text-[28px] text-white">
+            <button title="menu-open" className="p-1 border border-white-300 focus:outline-none font-8 text-[28px] text-white">
               <GiHamburgerMenu />
             </button>
           )}

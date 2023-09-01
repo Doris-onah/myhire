@@ -32,16 +32,16 @@ useEffect(() => {
     return (
         <div id="PopularCars">
         <div className="flex w-full h-[100%]   md:grid md:grid-cols-4 gap-4 grid grid-cols-1">
-{suv?.results?.slice(skip, skip + PER_PAGE).map((each) => {
+{suv?.results?.slice(skip, skip + PER_PAGE).map((suv , index) => {
     return(
 
-<div className=" md:w-[100%] md:h-[100%] h-[300px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center " key={each.suv} >
+<div className=" md:w-[100%] md:h-[100%] h-[300px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center " key={`${suv.id}_${index}`} >
          
 <div className="flex md:flex-col items-center justify-center w-[95%] h-[90%] rounded-[20px] md:rounded-0 md:bg-inherit">
 
 <div className=" md:w-full w-[90%] md:h-[100%] h-[100%] flex items-center justify-center">
     <div className="w-[100%]  h-[100%] flex items-center justify-center">
-       <img src={each.picture.medium} className="md:w-full w-[100%] h-[100%] md:rounded-[15px]" alt="" />
+       <img src={suv.picture.medium} className="md:w-full w-[100%] h-[100%] md:rounded-[15px]" alt="" />
           </div>
           </div>
 

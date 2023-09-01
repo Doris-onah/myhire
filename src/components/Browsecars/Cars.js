@@ -11,7 +11,7 @@ function Cars() {
         
             <div id="Cars" className="w-full h-[100%] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center">
            <div className="flex md:w-[90%] w-[80%]  flex-col items-center justify-center">
-<div className="my-20">
+<div className="md:my-20">
     {/* larger screen section */}
     <div className="hidden md:block">
          <h1 className="text-4xl font-semibold text-white">Check Out Trending Car Rental Details</h1>
@@ -21,7 +21,7 @@ function Cars() {
 
         {/* smaller screen section */}
     <div className="md:hidden block">
-         <h1 className="text-1xl font-bold text-white">Most popular car rental deals</h1>
+         <h1 className="text-[20px] font-bold text-white">Most popular car rental deals</h1>
     </div>
    
 </div>
