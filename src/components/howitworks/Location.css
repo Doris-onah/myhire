@@ -6,9 +6,11 @@
     text-align: center;
     margin-top: 100px;
     width: 100%;
+    height: 100%;
     color: white;
     /* background-color: saddlebrown; */
 }
+
 .location-text {
     display: flex;
     flex-direction: column;
@@ -17,12 +19,14 @@
     text-align: center;
     width: 100%;
 }
+
 .location-text h1 {
     font-size: 30px;
     font-weight: 600;
-  
+
     margin-bottom: 30px;
 }
+
 .location-text p {
     font-size: 20px;
     font-weight: 400;
@@ -37,6 +41,7 @@
     width: 100%;
     height: 100%;
 }
+
 .maps-con {
     display: flex;
     flex-direction: row;
@@ -46,9 +51,10 @@
     width: 100%;
     height: 100%;
 }
+
 .map-icon {
     display: flex;
-  border-radius: 20px;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     background-color: #ECC0401A;
@@ -62,22 +68,25 @@
 .maps {
     display: flex;
     flex-direction: column;
-align-items: center;
+    align-items: center;
     justify-content: center;
     /* background-color: rgb(50, 15, 139); */
     width: 300px;
     height: 400px;
 }
+
 .maps h1 {
     font-size: 20px;
     font-weight: 600;
     color: #fff;
 }
+
 .maps p {
     font-size: 15px;
     font-weight: 400;
     color: #fff;
 }
+
 @media screen and (max-width: 990px) {
     .location-map {
         display: flex;
@@ -87,6 +96,7 @@ align-items: center;
         width: 100%;
         height: 100%;
     }
+
     .location {
         display: flex;
         flex-direction: column;
@@ -97,6 +107,7 @@ align-items: center;
         width: 100%;
         /* background-color: saddlebrown; */
     }
+
     .maps {
         display: flex;
         flex-direction: column;
@@ -105,14 +116,17 @@ align-items: center;
         /* background-color: rgb(50, 15, 139); */
         width: 100%;
         height: 300px;
-    
+
     }
+
     .map-icon {
         border-radius: 50px;
-        }
+    }
+
     .br {
         display: none;
     }
+
     .location-text {
         display: flex;
         flex-direction: column;
@@ -121,23 +135,25 @@ align-items: center;
         text-align: center;
         width: 100%;
     }
-  .text-con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-  
-  }
-  .maps-con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 100%;
-  
 
-}
+    .text-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+
+    }
+
+    .maps-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+
+
+    }
 }

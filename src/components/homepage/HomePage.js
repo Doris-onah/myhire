@@ -7,6 +7,7 @@ import HeroSection from "./HeroSection";
 import Location from "../howitworks/Location";
 import WhyChooseUs from "../WhyChooseUs";
 import Review from "../Review";
+import Cars from "../Browsecars/Cars"
 
 
 function HomePage() {
@@ -20,7 +21,9 @@ function HomePage() {
          <HeroSection />
       
           <Booking />
-          <Location />    
+          <Location />  
+          <div id="Cars"><Cars /> </div>
+          {/* <RentalDetails />  */}
          <div id="choose"> <WhyChooseUs  /> </div>
          <div id="Review"><Review/></div>
           <Footer />

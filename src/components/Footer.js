@@ -12,7 +12,7 @@ function Footer() {
             <div className=" w-[100%]   md:w-[70%] md:h-[100%] md:flex md:justify-center md:items-center ">
               <section className="md:w-[90%] w-[100%] h-[300px] flex flex-col items-center md:items-start text-[18px] ">
                 <div className="w-[160px]  h-[100px] md:text-left ">
-                  <img src={logo} class="w-[100%]  h-[100%] " alt="logo" />
+                  <img src={logo} className="w-[100%]  h-[100%] " alt="logo" />
                 </div>
                 <p className="text-center md:text-left">
                   our vision is to provide convenience <br /> and help increase
@@ -20,11 +20,9 @@ function Footer() {
                 </p>
                 <span className="flex justify-between w-[100px] mt-4 text-black">
                   <div className="icon ">
-                    {" "}
                     <LiaFacebookF />
                   </div>
                   <div className="icon">
-                    {" "}
                     <LiaTwitter />
                   </div>
                   <div className="icon">
@@ -70,21 +68,21 @@ function Footer() {
             {/* mobile screen footer section */}
             <section className="block md:hidden flex w-[100%] justify-between">
               <span>
-                <h1 class="font-semibold">ABOUT-US</h1>
-                <ul class="footer-items">
-                  <li class="mt-4">Whitepaper</li>
-                  <li class="mt-4">Blogs</li>
-                  <li class="mt-4">Activity</li>
+                <h1 className="font-semibold">ABOUT-US</h1>
+                <ul className="footer-items">
+                  <li className="mt-4">Whitepaper</li>
+                  <li className="mt-4">Blogs</li>
+                  <li className="mt-4">Activity</li>
                 </ul>
               </span>
 
               <span>
-                <h1 class="font-semibold">SUPPORT</h1>
+                <h1 className="font-semibold">SUPPORT</h1>
                 <ul>
-                  <li class="mt-4">Help & Support</li>
-                  <li class="mt-4">Community</li>
-                  <li class="mt-4">Author Profile</li>
-                  <li class="mt-4">Contact</li>
+                  <li className="mt-4">Help & Support</li>
+                  <li className="mt-4">Community</li>
+                  <li className="mt-4">Author Profile</li>
+                  <li className="mt-4">Contact</li>
                 </ul>
               </span>
             </section>

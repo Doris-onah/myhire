@@ -10,7 +10,7 @@ import "./Header.css";
 function Header() {
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
-  const whyChoose = () => {
+  const home = () => {
     navigate("/")
   }
 
@@ -33,17 +33,19 @@ function Header() {
               </li>
 
               <li>
-                <Link to="/RentalDetails">RentalDetails</Link>
+               <span onClick={home}>
+                 <a href="#Cars">RentalDetails</a>
+               </span>
               </li>
 
               <li>
-               <span onClick={whyChoose} >
+               <span onClick={home} >
                  <a href="#choose">WhyChooseUs</a>
                   </span>
               </li>
 
               <li>
-                <span onClick={whyChoose}>
+                <span onClick={home}>
                   <a href="#Review">Review</a>
                   </span>
               </li>
@@ -71,17 +73,19 @@ function Header() {
               </li>
 
               <li>
-                <Link to="/RentalDetails" onClick={() => {setShow(!show)}}>RentalDetails</Link>
+                <span onClick={home}>
+                <a href="#Cars" onClick={() => {setShow(!show)}}>RentalDetails</a>
+                </span>
               </li>
 
               <li>
-               <span onClick={whyChoose} >
+               <span onClick={home} >
                  <a href="#choose" onClick={() => {setShow(!show)}}>WhyChooseUs</a>
                   </span>
               </li>
 
               <li>
-                <span onClick={whyChoose}>
+                <span onClick={home}>
                   <a href="#Review" onClick={() => {setShow(!show)}}>Review</a>
                   </span>
               </li>
