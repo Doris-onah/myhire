@@ -3,10 +3,11 @@ import { Link, Outlet } from "react-router-dom";
 
 
 function Cars() {
-    return (
+   
+ return (
         
             <div id="Cars" className="w-full h-[100%] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center">
-           <div className="flex md:w-[90%] w-[80%]  flex-col items-center justify-center">
+           <div className="flex md:w-[90%] w-[95%]  flex-col items-center justify-center">
 <div className="md:my-20">
     {/* larger screen section */}
     <div className="hidden md:block">

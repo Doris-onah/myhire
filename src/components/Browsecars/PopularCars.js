@@ -39,7 +39,7 @@ useEffect(() => {
          
 <div className="flex md:flex-col items-center justify-center w-[95%] h-[90%] rounded-[20px] md:rounded-0 md:bg-inherit">
 
-<div className=" md:w-full w-[90%] md:h-[100%] h-[100%] flex items-center justify-center">
+<div className=" md:w-full w-[50%] md:h-[100%] h-[100%] flex items-center justify-center">
     <div className="w-[100%]  h-[100%] flex items-center justify-center">
        <img src={popular.picture.medium} className="md:w-full w-[100%] h-[100%] md:rounded-[15px]" alt="" />
           </div>
@@ -63,8 +63,8 @@ useEffect(() => {
          <div className="w-[100%] h-[100%]">
             <span className="w-[100%] h-[100%] flex flex-col justify-center gap-4">
                <div className="flex items-center justify-between">
-                  <span className="flex gap-4 xs:gap-2  items-center"><HiUserAdd/> <p>7 people</p></span>
-                  <span className="flex gap-2 xs:gap-2 items-center"><SlCalender/> <p>2022 model</p></span>
+                  <span className="flex gap-4  items-center justify-center"><HiUserAdd/> <p>7 people</p></span>
+                  <span className="flex gap-2  items-center justify-center"><SlCalender/> <p>2022 model</p></span>
                </div>
                <div className="flex items-center justify-between">
                   <span className="flex gap-2 items-center justify-center"><FaCar/> <p>Petrol Engine</p></span>
