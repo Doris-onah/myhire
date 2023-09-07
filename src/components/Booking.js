@@ -1,7 +1,7 @@
 
 import { GoChevronDown } from "react-icons/go";
 
-function Booking(){
+function Booking() {
     return (
 <div className="md:flex md:justify-center md:items-center w-full h-[180px]  hidden md:block text-black  ">
         

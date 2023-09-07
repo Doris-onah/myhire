@@ -13,10 +13,10 @@ function Login() {
             <Header />
             </div>
             
-            <section className="bg-[#5D3578]   w-full h-[100%] flex items-center">
+            <section className="bg-[#5D3578]   w-full h-[100%] flex items-center justify-center">
   <div className="flex flex-col h-[100%] items-center justify-center px-6 mx-auto  lg:py-0">
   {/* sm:max-w-md   rounded-lg shadow dark:border*/}
-      <div className=" md:w-[100%] flex items-center justify-center   md:mt-0  xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+      <div className=" md:w-[100%] flex items-center justify-center sm:max-w-md  md:mt-0  xl:p-0 dark:bg-gray-800 dark:border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <span ><h1 className="text-xl font-bold  text-white md:text-2xl ">
                   LOGIN 

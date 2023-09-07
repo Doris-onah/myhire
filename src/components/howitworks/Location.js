@@ -22,7 +22,7 @@ function Location () {
     <div className='maps'>
     <div className='map-icon'><IoLocationSharp/></div>
         <h1>Tell us your location</h1>
-        <p>Tell uis where you are to help us narrow down your Car Hire choices</p>
+        <p>Tell us where you are to help us narrow down your Car Hire choices</p>
     </div>
 
     <div className='maps'>
@@ -30,7 +30,7 @@ function Location () {
     <div className='maps'>
     <div className='map-icon'>   <AiFillCalendar/></div>
         <h1>Schedule Your Pick-up Date</h1>
-        <p>Bothered about Pick-Up dates? Need not worry,
+        <p>Bothered about Pick-Up dates? Need not to worry,
              we’ve got you covered on what ever date you choose to start your Trip</p>
     </div>
     <div className='maps'>

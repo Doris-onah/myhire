@@ -14,7 +14,7 @@ function Header() {
   }
 
   return (
-    <div className="header-container bg-gradient-to-r from-purple-600 to-pink-600">
+    <div className=" header-container bg-gradient-to-r from-purple-600 to-pink-600">
       <div className="header">
         <div className="logo">
           <img src={logo} width="100px" height="100px" alt="logo" />
@@ -23,17 +23,25 @@ function Header() {
         <nav className={show? "small" : "big"}>
           <div className="big">
             <ul className="nav-links ">
-              <li>
+              {/* <li>
                 <Link to="/" >Home</Link>
-              </li>
+              </li> */}
 
               <li>
-                <Link to="/HowItWorks">HowItWorks</Link>
+               <span onClick={home}>
+                 <a href="#home">home</a>
+               </span>
               </li>
 
               <li>
                <span onClick={home}>
-                 <a href="#Cars">RentalDetails</a>
+                 <a href="#howitworks">HowItWorks</a>
+               </span>
+              </li>
+
+              <li>
+               <span onClick={home}>
+                 <a href="#Cars">HireDetails</a>
                </span>
               </li>
 
@@ -68,12 +76,14 @@ function Header() {
               </li>
 
               <li>
-                <Link to="/HowItWorks" onClick={() => {setShow(!show)}}>HowItWorks</Link>
+               <span onClick={home}>
+                 <a href="#howitworks">HowItWorks</a>
+               </span>
               </li>
 
               <li>
                 <span onClick={home}>
-                <a href="#Cars" onClick={() => {setShow(!show)}}>RentalDetails</a>
+                <a href="#Cars" onClick={() => {setShow(!show)}}>HireDetails</a>
                 </span>
               </li>
 

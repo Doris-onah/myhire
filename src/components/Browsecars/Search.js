@@ -2,7 +2,7 @@
 
 function Search() {
     return (
-        <div className="w-full md:h-[250px] h-[100px] flex items-center justify-center">
+        <div id="search" className="w-full md:h-[250px] h-[100px] flex items-center justify-center">
            <div className="flex md:w-[90%] w-[80%] md:h-[90%]  flex-col items-center justify-center">
 
                 <div className="flex flex-col gap-4 items-center justify-center w-full">

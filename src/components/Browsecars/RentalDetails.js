@@ -1,14 +1,25 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import Header from "../header/Header";
+import Footer from "../Footer";
+import Search from "../Browsecars/Search";
+import { Link,Outlet } from "react-router-dom";
+
+function RentalDetails() {
 
 
-function Cars() {
-   
- return (
-        
-            <div id="Cars" className="w-full h-[100%] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center">
-           <div className="flex md:w-[90%] w-[90%]  flex-col items-center justify-center">
-<div className="md:my-20">
+    return (
+
+        <div id="RentalDetails" className=" w-full bg-gradient-to-r from-purple-600 to-pink-500 font-plus-jakarta-sans ">
+           <div className="fixed w-full">
+            <Header />
+            </div>
+           
+            <div className="pt-[100px]">
+           <Search />
+         
+           <div id="Cars" className="w-full h-[100%]  font-plus-jakarta-sans  flex items-center justify-center">
+           <div className="flex md:w-[90%] w-[80%]  flex-col items-center justify-center">
+<div>
     {/* larger screen section */}
     <div className="hidden md:block">
          <h1 className="text-4xl font-semibold text-white">Check Out Trending Car Rental Details</h1>
@@ -18,7 +29,7 @@ function Cars() {
 
         {/* smaller screen section */}
     <div className="md:hidden block">
-         <h1 className="text-[20px] font-bold text-white">Most popular car rental deals</h1>
+         <h1 className="text-1xl font-bold text-white">Most popular car rental deals</h1>
     </div>
    
 </div>
@@ -27,13 +38,13 @@ function Cars() {
 
     <div className="flex flex items-between justify-center w-[100%] ">
 <ul className="flex text-2xl text-white items-between justify-center w-[100%] my-4">
-  <li className="w-full text-center  ">
+  <li className="w-full text-center hover:underline  hover:underline-offset-8 ">
 
-    <Link to="/Cars/PopularCars" className="hidden md:block" >Popular Car </Link>
-    <Link to="/Cars/PopularCars" className="md:hidden block text-[15px]" >Popular  </Link>
+    <Link to="/RentalDetails" className="hidden md:block" >Popular Car </Link>
+    <Link to="/Cars" className="md:hidden block text-[15px]" >Popular  </Link>
     </li>
 
-    <li className="w-full text-center  ">
+    <li className="w-full text-center hover:underline  hover:underline-offset-8 ">
         <Link to="/Cars/SuvsCars"  className="hidden md:block">Suvs & Truck</Link>
         <Link to="/Cars/SuvsCars" className="md:hidden block text-[15px]" >Large</Link>
         </li>
@@ -43,7 +54,7 @@ function Cars() {
     <Link to="/Cars/SedanCars" className="md:hidden block text-[15px]" >Small</Link>
     </li>
 
-    <li className="w-full text-center ">
+    <li class="w-full text-center ">
      <Link to="/Cars/ExclusiveCars" className="hidden md:block" >Exclusive Car</Link>
      <Link to="/Cars/ExclusiveCars" className="md:hidden block text-[15px]"  >Exclusive </Link>
      </li>
@@ -54,6 +65,15 @@ function Cars() {
 </div>
         </div>
         </div>
+
+            
+                <Footer />
+
+     </div>
+      </div>
+ 
+     
+     
     );
 }
-export default Cars;
+export default RentalDetails;

@@ -1,7 +1,14 @@
+import React from "react";
 import car from "../../images/car.png";
+import { useNavigate } from "react-router-dom";
 function HeroSection() {
+  const navigate = useNavigate()
+
+const hire = () => {
+  navigate("/")
+}
   return (
-    <div className=" md:h-[800px] h-[600px] w-[100%] flex items-center  justify-center ">
+    <div className=" md:h-[600px] h-[600px] w-[100%] flex items-center  justify-center ">
       <div className=" md:w-[90%]  md:h-[100%] h-[600px] flex justify-center align-center flex-col md:flex-row md:items-center md:flex md:justify-center  ">
         <div className="hidden md:block text-white h-[300px] md:h-[100%] md:w-[80%] md:flex items-center justify-center">
           <div className="laptop ">
@@ -17,8 +24,8 @@ function HeroSection() {
             </p>
 
             <div className="md:w-[100%] md:h[100%] pt-[60px] ">
-              <button className="w-[450px] h-[40px]  bg-white text-black  rounded-[5px]">
-                Hire now!
+              <button onClick={hire} className="w-[450px] h-[40px]  bg-white text-black  rounded-[5px]">
+               <a href="#Cars"> Hire now!</a>
               </button>
             </div>
           </div>
@@ -27,7 +34,7 @@ function HeroSection() {
         <div className="mob md:hidden block flex justify-center items-center align-center w-[100%]">
           <span className="w-[90%] text-center">
             <h1 className=" md:text-6xl font-bold text-3xl  uppercase text-white">
-              FAST AND EASY WAY TO RENT A CAR
+              FAST AND EASIER WAY TO RENT A CAR
             </h1>
             <p className=" text-white  text-[19px] py-[10px] ">
               Our Car Rentals online system <br /> designed to meet your
@@ -43,6 +50,11 @@ function HeroSection() {
             alt="car"
           />
         </div>
+        <div className="w-[100%] md:h[100%]  flex items-center justify-center md:hidden block">
+              <button onClick={hire} className="w-[300px] h-[40px]  bg-white text-black  rounded-[5px]">
+               <a href="#Cars"> Hire now! </a>
+              </button>
+            </div>
       </div>
     </div>
   );

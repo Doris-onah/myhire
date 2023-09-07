@@ -30,16 +30,16 @@ useEffect(() => {
   const skip = page * PER_PAGE - PER_PAGE;
 
     return (
-        <div id="PopularCars">
+        <div id="SuvsCars">
         <div className="flex w-full h-[100%]   md:grid md:grid-cols-4 gap-4 grid grid-cols-1">
 {suv?.results?.slice(skip, skip + PER_PAGE).map((suv, index) => {
     return(
 
-<div className=" md:w-[100%] md:h-[100%] h-[300px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center " key={`${suv.id}_${index}`} >
+<div className=" md:w-[100%] md:h-[100%] h-[250px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center " key={`${suv.id}_${index}`} >
          
 <div className="flex md:flex-col items-center justify-center w-[95%] h-[90%] rounded-[20px] md:rounded-0 md:bg-inherit">
 
-<div className=" md:w-full w-[50%] md:h-[100%] h-[100%] flex items-center justify-center">
+<div className=" md:w-full w-[65%] md:h-[100%] h-[100%] flex items-center justify-center">
     <div className="w-[100%]  h-[100%] flex items-center justify-center">
        <img src={suv.picture.medium} className="md:w-full w-[100%] h-[100%] md:rounded-[15px]" alt="" />
           </div>
@@ -56,18 +56,16 @@ useEffect(() => {
 
        {/* for mobile section */}
        <div className=" md:hidden block text-[18px] flex  w-[80%] h-[100%]  items-center justify-end ">
-      <div className=" w-[95%] h-[100%] flex flex-col items-center justify-center ">
+      <div className=" w-[90%] h-[100%] flex flex-col items-center justify-center ">
          <div className="w-[100%] h-[70%]">
              <h1>Hyundai Space Box <br/>$100 Daily</h1>
              </div>
-         <div className="w-[100%] h-[100%]">
+         <div className="w-[100%] h-[80%]">
             <span className="w-[100%] h-[100%] flex flex-col justify-center gap-4">
-               <div className="flex items-center justify-between">
-                  <span className="flex gap-2  items-center justify-center"><HiUserAdd/> <p>7 people</p></span>
+               <div className="flex items-center ">
                   <span className="flex gap-2  items-center justify-center"><SlCalender/> <p>2022 model</p></span>
                </div>
                <div className="flex items-center justify-between">
-                  <span className="flex gap-2 items-center justify-center"><FaCar/> <p>Petrol Engine</p></span>
                   <span className="flex gap-2 items-center justify-center"><FaLocationDot/> <p>Lagos</p></span>
                </div>
             </span>
