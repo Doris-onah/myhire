@@ -8,10 +8,18 @@ import "./Header.css";
 
 function Header() {
   const [show, setShow] = useState(false);
+
   const navigate = useNavigate();
   const home = () => {
     navigate("/")
   }
+
+  const handleHire = () => {
+    navigate("/#Cars")
+    navigate("/Cars/PopularCars")
+  }
+
+ 
 
   return (
     <div className=" header-container bg-gradient-to-r from-purple-600 to-pink-600">
@@ -41,7 +49,7 @@ function Header() {
 
               <li>
                <span onClick={home}>
-                 <a href="#Cars">HireDetails</a>
+                 <a href="#Cars" onClick={handleHire}>HireDetails</a>
                </span>
               </li>
 

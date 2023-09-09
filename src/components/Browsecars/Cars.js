@@ -1,9 +1,14 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
+import PopularCars from "./PopularCars";
 
 
 function Cars() {
-   
+
+const location = useLocation()
+console.log(location.pathname)
+
+const path = location.pathname
  return (
         
             <div id="Cars" className="w-full h-[100%] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center">
@@ -49,6 +54,8 @@ function Cars() {
      </li>
 </ul>
 </div>
+
+{path === "/"? <PopularCars/> : ""}
 <Outlet />
 
 </div>

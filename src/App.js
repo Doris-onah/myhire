@@ -19,7 +19,7 @@ function App() {
           <Route index element={<HomePage />} />
 
           <Route path="Cars" element={<HomePage />}>
-             <Route  path="PopularCars" element={<PopularCars />}/>
+             <Route index path="PopularCars" element={<PopularCars />}/>
                 <Route path="SuvsCars" element={<SuvsCars />}/>
                  <Route path="SedanCars" element={<SedanCars />}/>
                   <Route path="ExclusiveCars" element={<ExclusiveCars />}/>
