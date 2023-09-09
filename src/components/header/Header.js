@@ -77,7 +77,7 @@ function Header() {
 
               <li>
                <span onClick={home}>
-                 <a href="#howitworks">HowItWorks</a>
+                 <a href="#howitworks"  onClick={() => {setShow(!show)}}>HowItWorks</a>
                </span>
               </li>
 
