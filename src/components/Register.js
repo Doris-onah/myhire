@@ -1,13 +1,9 @@
 import React from "react";
-import Header from "../components/header/Header";
 import { Link } from "react-router-dom";
 
 function Register() {
     return (
-        <div className="w-full bg-gradient-to-r from-purple-600 to-pink-500 font-plus-jakarta-sans ">
-           <div className="fixed w-full">
-            <Header />
-            </div>
+        <div className="w-full bg-gradient-to-r from-purple-600 to-pink-500 ">
 
             <section className="bg-[#5D3578]   w-full h-[100vh] flex items-center">
   <div className="flex flex-col h-[100%] items-center justify-center px-6 mx-auto  lg:py-0">

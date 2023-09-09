@@ -72,17 +72,12 @@ useEffect(() => {
          </div>
 
 <div className="w-[100%] h-[50%] flex items-center justify-center">
-         <div className="btn flex justify-between w-[100%] h-[40%]">
-      <button className=" rounded-[20px]  bg-gradient-to-r from-purple-800 to-pink-600 w-[90px] h-[40px]">Message</button>
-      <button className="rounded-[20px] bg-gradient-to-r from-purple-800 to-pink-600  w-[90px] h-[40px]">Place Call</button>
+         <div className="btn flex justify-between w-[100%] h-[40%] text-white">
+      <button className=" rounded-[20px]  bg-gradient-to-r from-purple-800 to-pink-600 w-[90px] h-[40px]  text-[12px]">Message</button>
+      <button className="rounded-[20px] bg-gradient-to-r from-purple-800 to-pink-600  w-[90px] h-[40px]  text-[12px]">Place Call</button>
       </div>
       </div>
-      {/* </div> */}
 
-      <div className="btn flex justify-between hidden md:block">
-      <button className="text-[15px] bg-white h-[40px] w-[100px]">CALL NOW</button>
-      <button className="bg-white h-[40px] w-[100px]">MESSAGE</button>
-      </div>
          </div>
 </div>
 </div>
@@ -93,7 +88,7 @@ useEffect(() => {
      </div>
       {/* /* pagination*/}
    <div className="flex items-center justify-center mb-8">
- <button className="w-[100px] h-[40px] bg-red-100 text-black">show more</button>
+ <button className="w-[100px] h-[40px] bg-white text-black">show more</button>
 </div>   
 </div>
      

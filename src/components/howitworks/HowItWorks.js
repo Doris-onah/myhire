@@ -8,9 +8,10 @@ import "../homepage/HomePage.css";
 function HowItWorks() {
     return (
      <div id="howitworks"
-      className="homepage  bg-gradient-to-r from-purple-600 to-pink-600 font-plus-jakarta-sans"> 
-      <Location />
+      className="homepage  bg-gradient-to-r from-purple-600 to-pink-600"> 
+    
       <Booking />
+      <Location />
         </div>
     );
 }

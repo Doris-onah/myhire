@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/header/Header";
 import { Link } from "react-router-dom";
 
 
@@ -9,10 +8,6 @@ function Login() {
     
     return (
         <div className=" w-full h-[100vh] ">
-           <div className="fixed w-full">
-            <Header />
-            </div>
-            
             <section className="bg-[#5D3578]   w-full h-[100%] flex items-center justify-center">
   <div className="flex flex-col h-[100%] items-center justify-center px-6 mx-auto  lg:py-0">
   {/* sm:max-w-md   rounded-lg shadow dark:border*/}

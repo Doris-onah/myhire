@@ -11,7 +11,7 @@ import HowItWorks from "../howitworks/HowItWorks"
 function HomePage() {
 
     return (
-        <div id="home"  className="homepage   w-[100%]  bg-gradient-to-r from-purple-600 to-pink-600 font-plus-jakarta-sans">
+        <div id="home"  className="homepage   w-[100%]  bg-gradient-to-r from-purple-600 to-pink-600 ">
           <div >
           <div className="mt-8 md:mt-[0]"><Search /> </div>
            <HeroSection />

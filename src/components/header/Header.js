@@ -14,11 +14,6 @@ function Header() {
     navigate("/")
   }
 
-  const handleHire = () => {
-    navigate("/#Cars")
-    navigate("/Cars/PopularCars")
-  }
-
  
 
   return (
@@ -31,9 +26,6 @@ function Header() {
         <nav className={show? "small" : "big"}>
           <div className="big">
             <ul className="nav-links ">
-              {/* <li>
-                <Link to="/" >Home</Link>
-              </li> */}
 
               <li>
                <span onClick={home}>
@@ -49,7 +41,7 @@ function Header() {
 
               <li>
                <span onClick={home}>
-                 <a href="#Cars" onClick={handleHire}>HireDetails</a>
+                 <a href="#Cars" >HireDetails</a>
                </span>
               </li>
 
