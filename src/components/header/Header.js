@@ -29,7 +29,7 @@ function Header() {
 
               <li>
                <span onClick={home}>
-                 <a href="#home">home</a>
+                 <a href="#home">Home</a>
                </span>
               </li>
 

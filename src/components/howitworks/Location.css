@@ -1,4 +1,120 @@
 .location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  /* background-color: saddlebrown; */
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.location-text h1 {
+  font-size: 30px;
+  font-weight: 600;
+
+  margin-bottom: 30px;
+}
+
+.location-text p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.location-map {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background-color: rgb(164, 17, 118); */
+  width: 100%;
+  height: 100%;
+}
+
+.maps-con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(50, 15, 139); */
+  width: 90%;
+  height: 100%;
+}
+
+.map-icon {
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecc0401a;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(50, 15, 139); */
+  width: 20%;
+  height: 400px;
+  position: relative;
+}
+
+.maps-lines {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 20%;
+  position: relative;
+}
+
+.lines {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  top: -10%;
+  display: flex;
+}
+
+.maps h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.maps p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .location-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .location {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,196 +122,71 @@
     text-align: center;
     margin-top: 100px;
     width: 100%;
-    height: 100%;
-    color: white;
     /* background-color: saddlebrown; */
-}
+  }
 
-.location-text {
+  .maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+  }
+
+  .map-icon {
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .location-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
-}
+  }
 
-.location-text h1 {
-    font-size: 30px;
-    font-weight: 600;
-
-    margin-bottom: 30px;
-}
-
-.location-text p {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.location-map {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    /* background-color: rgb(164, 17, 118); */
-    width: 100%;
-    height: 100%;
-}
-
-.maps-con {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    /* background-color: rgb(50, 15, 139); */
-    width: 100%;
-    height: 100%;
-}
-
-.map-icon {
-    display: flex;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    background-color: #ECC0401A;
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-    margin-bottom: 30px;
-    color: white;
-}
-
-.maps {
+  .text-con {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(50, 15, 139); */
-    width: 300px;
-    height: 400px;
-    position: relative;
-}
+    text-align: center;
+    width: 90%;
+  }
 
+  .maps-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+  }
 
-.maps-lines {
+  .maps-lines {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 100px;
     width: 320px;
     position: relative;
-}
+  }
 
-.lines {
+  .lines {
     position: absolute;
-    height: 200px;
-    width: 460px;
-    bottom: 100px;
+    height: 30px;
+    width: 100%;
+    top: 130px;
     display: flex;
-}
-
-
-.maps h1 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-}
-
-.maps p {
-    font-size: 15px;
-    font-weight: 400;
-    color: #fff;
-}
-
-@media screen and (max-width: 990px) {
-    .location-map {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 50%;
-    }
-
-    .location {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 100px;
-        width: 100%;
-        /* background-color: saddlebrown; */
-    }
-
-    .maps {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 200px;
-
-    }
-
-    .map-icon {
-        border-radius: 50px;
-        width: 70px;
-        height: 70px;
-        font-size: 40px;
-
-    }
-
-    .br {
-        display: none;
-    }
-
-    .location-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    .text-con {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 90%;
-
-    }
-
-    .maps-con {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-        height: 100%;
-
-
-    }
-
-    .maps-lines {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        width: 320px;
-        position: relative;
-    }
-
-    .lines {
-        position: absolute;
-        height: 50px;
-        width: 120px;
-        bottom: 10px;
-        display: flex;
-        transform: rotate(100deg);
-
-    }
+    transform: rotate(100deg);
+  }
 }

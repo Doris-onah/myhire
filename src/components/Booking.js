@@ -1,78 +1,96 @@
-
 import { GoChevronDown } from "react-icons/go";
 
 function Booking() {
-    return (
-<div className="md:flex md:justify-center md:items-center w-full h-[180px]  hidden md:block text-black  ">
-        
-        <section className="md:flex md:justify-center md:items-center  w-[100%]"> 
-        <div className=" w-[100%] flex justify-center items-center">
-        <div className=" md:flex rounded-[10px] md:w-[89%]  h-[170px] md:justify-around items-center bg-gray-100">
-         
-         {/* pick up section */}
-    <span className="flex justify-center items-center   ">
-            <div className="w-[100%]  h-[100%]">
-               <span className="flex gap-4"> <div className="bg-gray-200 w-[25px] h-[25px] flex justify-center items-center rounded-[50%]">
-                <button title="btn-on" className="bg-white w-[12px] h-[12px]  rounded-[50%]"></button></div><h1>PICK-UP</h1> </span>
-                 <h2 className=" font-semibold ">LOCATION</h2>
-               <span className="flex justify-between items-center gap-4 ">select your city <GoChevronDown /></span>
+  return (
+    <div className="md:flex md:justify-center md:items-center w-[100%] h-[180px]  hidden md:block text-black  ">
+      <div className="w-[94%] h-[100%]  flex items-center justify-center bg-gray-100 rounded-[10px]">
+        <section className="flex justify-center items-center h-[100%] w-[94%] ">
+          <div className="flex items-center gap-8 md:w-[100%] w-[80%] justify-between h-[90%] ">
+            {/* pick up section */}
+            <div className=" md:w-[80%]  ">
+              {" "}
+              <span className="flex gap-4">
+                {" "}
+                <div className="bg-gray-200 w-[25px] h-[25px] flex justify-center items-center rounded-[50%]">
+                  <button
+                    title="btn-off"
+                    className="bg-white w-[12px] h-[12px]  rounded-[50%]"
+                  ></button>
+                </div>
+                <h1>DROP-OFF</h1>{" "}
+              </span>
+              <div className="flex justify-center items-center w-[100%]   ">
+                <div className="md:w-[80%] w-[50%] h-[100%]">
+                  <h2 className=" font-semibold ">LOCATION</h2>
+                  <span className="flex justify-between items-center gap-4 ">
+                    select your city <GoChevronDown />
+                  </span>
+                </div>
+                <hr className="mx-4 md:w-[2px] md:h-[80px] m-0 md:bg-gray-400 md:border-0 md:dark:bg p-0 " />
+                <div className="md:w-[70%] w-[50%] h-[100%]  ">
+                  <h2 className="  font-semibold ">DATE</h2>
+                  <span className="flex justify-between items-center gap-4">
+                    select your date
+                    <GoChevronDown />
+                  </span>
+                </div>
+                <hr className="mx-4 md:w-[2px] md:h-[80px] md:bg-gray-400 md:border-0 md:dark:bg p-0 " />
+                <div className="md:w-[70%] w-[50%] h-[100%] ">
+                  <h2 className="font-semibold ">TIME</h2>
+                  <span className="flex justify-between items-center gap-4">
+                    {" "}
+                    select your time
+                    <GoChevronDown />
+                  </span>
+                </div>
+              </div>
             </div>
-
-            <hr className="mx-8 md:w-[2px] md:h-[80px] m-0 md:bg-gray-200 md:border-0 md:dark:bg p-0 "/>
-           
-           <div  className="w-[100%]  h-[100%]">
-               <h2 className="  font-semibold ">DATE</h2>
-               <span className="flex justify-between items-center gap-4">schedule your date<GoChevronDown /></span>
-           </div>
-
-           <hr className="mx-8 md:w-[2px] md:h-[80px] md:bg-gray-200 md:border-0 md:dark:bg p-0 "/>
-           
-           <div className="w-[100%]  h-[100%] ">
-               <h2 className="mt-4 font-semibold ">TIME</h2>
-               <span className="flex justify-between items-center gap-4"> schdule your pick-up time<GoChevronDown /></span>
-           </div>
- </span>
-
-        {/* drop-off section */}
-        <span className="flex justify-center items-center  ">
-            <div className="w-[100%]  h-[100%]  ">
-               <span className="flex gap-4"> <div className="bg-gray-200 w-[25px] h-[25px] flex justify-center items-center rounded-[50%]">
-                <button title="btn-off" className="bg-white w-[12px] h-[12px]  rounded-[50%]"></button></div><h1>DROP-OFF</h1> </span>
-               <div > 
-                <h2 className=" font-semibold ">LOCATION</h2>
-               <span className="flex justify-between items-center gap-4 ">select your city <GoChevronDown /></span>
+            {/* drop-off section */}
+            <div className=" w-[80%] ">
+              <span className="flex gap-4">
+                <div className="bg-gray-200 w-[25px] h-[25px] flex justify-center items-center rounded-[50%]">
+                  <button
+                    title="btn-off"
+                    className="bg-white w-[12px] h-[12px]  rounded-[50%]"
+                  ></button>
+                </div>
+                <h1>DROP-OFF</h1>{" "}
+              </span>
+              <div className="flex justify-center items-center w-[100%]">
+                <div className="md:w-[80%] w-[50%] h-[100%]">
+                  <h2 className=" font-semibold ">LOCATION</h2>
+                  <span className="flex justify-between items-center gap-4 ">
+                    select your city <GoChevronDown />
+                  </span>
+                </div>
+                <hr className="mx-4 md:w-[2px] md:h-[80px] m-0 md:bg-gray-400 md:border-0 md:dark:bg p-0 " />
+                <div className="md:w-[70%] w-[50%] h-[100%]">
+                  <h2 className="  font-semibold ">DATE</h2>
+                  <span className="flex justify-between items-center gap-4">
+                    select your date
+                    <GoChevronDown />
+                  </span>
+                </div>
+                <hr className="mx-4 md:w-[2px] md:h-[80px] md:bg-gray-400 md:border-0 md:dark:bg p-0 " />
+                <div className="md:w-[70%] w-[50%] h-[100%]">
+                  <h2 className="font-semibold ">TIME</h2>
+                  <span className="flex justify-between items-center gap-4">
+                    {" "}
+                    select your time
+                    <GoChevronDown />
+                  </span>
+                </div>
+              </div>
             </div>
+          </div>
+          <div className="  flex justify-center items-center md:w-[10%] ">
+            <div className="w-[80%] h-[40px] rounded-[5px] bg-white  h-[100%] flex justify-center items-center">
+              <button>Search</button>
             </div>
-
-            <hr className="mx-8 md:w-[2px] md:h-[80px] m-0 md:bg-gray-200 md:border-0 md:dark:bg p-0 "/>
-           
-           <div  className="w-[100%]  h-[100%] mt-4">
-               <h2 className="  font-semibold ">DATE</h2>
-               <span className="flex justify-between items-center gap-4">select your date<GoChevronDown /></span>
-           </div>
-
-           <hr className="mx-8 md:w-[2px] md:h-[80px] md:bg-gray-200 md:border-0 md:dark:bg p-0 "/>
-           
-           <div className="w-[100%]  h-[100%] ">
-               <h2 className="mt-4 font-semibold ">TIME</h2>
-               <span className="flex justify-between items-center gap-4"> select your time<GoChevronDown /></span>
-           </div>
-
-           <div className="  flex justify-center items-center ml-4">
-            <div className="w-[100%]  h-[100%]">
-           <button className="bg-white w-[120px] h-[40px] rounded-[5px]">Search</button>
-           </div>
-        </div>
- </span>
-
-          
-       </div>
-        </div> 
+          </div>{" "}
         </section>
-        </div>
-        
-       
-    );
-};
+      </div>
+    </div>
+  );
+}
 export default Booking;
-            
