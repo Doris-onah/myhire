@@ -7,13 +7,14 @@ import Review from "../Review";
 import Cars from "../Browsecars/Cars";
 import Search from "../Browsecars/Search";
 import HowItWorks from "../howitworks/HowItWorks";
-
+import Header from "../header/Header";
 function HomePage() {
   return (
     <div
       id="home"
       className="homepage   w-[100%]  bg-gradient-to-r from-purple-600 to-pink-600 "
     >
+      <Header />
       <div>
         <div className="mt-8 md:mt-[0]">
           <Search />{" "}

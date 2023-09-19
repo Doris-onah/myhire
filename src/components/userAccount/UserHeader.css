@@ -1,4 +1,4 @@
-.header-container {
+.header-con {
   width: 100%;
   height: 100px;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.header {
+.user-header {
   height: 100px;
   width: 90%;
   display: flex;
@@ -15,8 +15,9 @@
   align-items: center;
 }
 
-.logo {
-  height: 100%;
+.user-logo {
+  height: 90%;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,27 +30,37 @@ nav {
   align-items: center;
 }
 
-.big {
+.user-big {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 80%;
+  /* background-color: green; */
   height: 100%;
 }
 
-.nav-links {
-  width: 100%;
+.user-nav-links {
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* background-color: aqua; */
 }
-
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 251, 251);
+  font-size: 25px;
+}
 li {
   list-style: none;
   font-size: 20px;
-  color: rgb(246, 249, 249);
+  color: rgb(205, 205, 205);
   margin-left: 10px;
 }
 
@@ -69,10 +80,10 @@ li {
     right: 0;
     justify-content: center;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(76, 40, 81);
   }
 
-  .big {
+  .user-big {
     display: none;
   }
 
@@ -83,7 +94,7 @@ li {
     height: 100vh;
   }
 
-  .nav-links {
+  .user-nav-links {
     width: 100%;
     height: 50%;
     top: 100px;
@@ -104,6 +115,13 @@ li {
   .navbar {
     display: block;
     width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-logo {
+    height: 90%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;

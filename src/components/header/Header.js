@@ -11,50 +11,47 @@ function Header() {
 
   const navigate = useNavigate();
   const home = () => {
-    navigate("/")
-  }
-
- 
+    navigate("/");
+  };
 
   return (
     <div className=" header-container bg-gradient-to-r from-purple-600 to-pink-600">
       <div className="header">
-        <div className="logo">
+        <div className="logo ">
           <img src={logo} width="100px" height="100px" alt="logo" />
         </div>
 
-        <nav className={show? "small" : "big"}>
+        <nav className={show ? "small" : "big"}>
           <div className="big">
             <ul className="nav-links ">
-
               <li>
-               <span onClick={home}>
-                 <a href="#home">Home</a>
-               </span>
+                <span onClick={home}>
+                  <a href="#home">Home</a>
+                </span>
               </li>
 
               <li>
-               <span onClick={home}>
-                 <a href="#howitworks">HowItWorks</a>
-               </span>
+                <span onClick={home}>
+                  <a href="#howitworks">HowItWorks</a>
+                </span>
               </li>
 
               <li>
-               <span onClick={home}>
-                 <a href="#Cars" >HireDetails</a>
-               </span>
+                <span onClick={home}>
+                  <a href="#Cars">HireDetails</a>
+                </span>
               </li>
 
               <li>
-               <span onClick={home} >
-                 <a href="#choose">WhyChooseUs</a>
-                  </span>
+                <span onClick={home}>
+                  <a href="#choose">WhyChooseUs</a>
+                </span>
               </li>
 
               <li>
                 <span onClick={home}>
                   <a href="#Review">Review</a>
-                  </span>
+                </span>
               </li>
 
               <li className=" w-[2px] md:h-[20px] md:bg-gray-200 md:border-0 md:dark:bg "></li>
@@ -62,7 +59,7 @@ function Header() {
                 <Link to="/Register">Register</Link>
               </li>
               <li>
-                <div className="bg-white text-black border rounded-[4px] w-[70px] text-center" >
+                <div className="bg-white text-black border rounded-[4px] w-[70px] text-center">
                   <Link to="/Login">Log in</Link>
                 </div>
               </li>
@@ -72,40 +69,89 @@ function Header() {
           <div className="small">
             <ul className="nav-links ">
               <li>
-                <Link to="/" onClick={() => {setShow(!show)}}>Home</Link>
-              </li>
-
-              <li>
-               <span onClick={home}>
-                 <a href="#howitworks"  onClick={() => {setShow(!show)}}>HowItWorks</a>
-               </span>
+                <Link
+                  to="/"
+                  onClick={() => {
+                    setShow(!show);
+                  }}
+                >
+                  Home
+                </Link>
               </li>
 
               <li>
                 <span onClick={home}>
-                <a href="#Cars" onClick={() => {setShow(!show)}}>HireDetails</a>
+                  <a
+                    href="#howitworks"
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                  >
+                    HowItWorks
+                  </a>
                 </span>
               </li>
 
               <li>
-               <span onClick={home} >
-                 <a href="#choose" onClick={() => {setShow(!show)}}>WhyChooseUs</a>
-                  </span>
+                <span onClick={home}>
+                  <a
+                    href="#Cars"
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                  >
+                    HireDetails
+                  </a>
+                </span>
               </li>
 
               <li>
                 <span onClick={home}>
-                  <a href="#Review" onClick={() => {setShow(!show)}}>Review</a>
-                  </span>
+                  <a
+                    href="#choose"
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                  >
+                    WhyChooseUs
+                  </a>
+                </span>
+              </li>
+
+              <li>
+                <span onClick={home}>
+                  <a
+                    href="#Review"
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                  >
+                    Review
+                  </a>
+                </span>
               </li>
 
               <li className=" w-[2px] md:h-[20px] md:bg-gray-200 md:border-0 md:dark:bg "></li>
               <li>
-                <Link to="/Register" onClick={() => {setShow(!show)}}>Register</Link>
+                <Link
+                  to="/Register"
+                  onClick={() => {
+                    setShow(!show);
+                  }}
+                >
+                  Register
+                </Link>
               </li>
               <li>
                 <div className="bg-white text-center text-black border rounded-[4px] w-[70px]">
-                  <Link to="/Login" onClick={() => {setShow(!show)}}>Log in</Link>
+                  <Link
+                    to="/Login"
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                  >
+                    Log in
+                  </Link>
                 </div>
               </li>
             </ul>
@@ -114,11 +160,17 @@ function Header() {
 
         <div className="navbar" onClick={() => setShow(!show)}>
           {show ? (
-            <button title="menu-close" className="p-1 border border-white-300 focus:outline-none text-[28px] text-white">
+            <button
+              title="menu-close"
+              className="p-1 border border-white-300 focus:outline-none text-[28px] text-white"
+            >
               <GrClose />
             </button>
           ) : (
-            <button title="menu-open" className="p-1 border border-white-300 focus:outline-none font-8 text-[28px] text-white">
+            <button
+              title="menu-open"
+              className="p-1 border border-white-300 focus:outline-none font-8 text-[28px] text-white"
+            >
               <GiHamburgerMenu />
             </button>
           )}

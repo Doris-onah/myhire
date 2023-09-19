@@ -1,0 +1,31 @@
+.MyAdvert-header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myadvert-nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.myadvert-nav ul {
+  width: 70%;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+}
+.myad-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myad-ul {
+  display: none;
+}
+@media screen {
+  .myad-ul {
+    display: flex;
+  }
+}
