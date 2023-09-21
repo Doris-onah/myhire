@@ -14,31 +14,31 @@ function MyFaq() {
       <div className="MyAdvert-header ">
         <div className="myadvert-nav">
           <h1 className="text-2xl">FAQ</h1>{" "}
-          <div className="md:block hidden">
+          <div className="advert-icon">
             <ul className="h">
               <li className="myad-icon">
                 <IoCheckmarkSharp />
-                Active
+                Active(3)
               </li>
               <li className="myad-icon">
                 <LuClock9 />
-                Reviewing
+                Reviewing(1)
               </li>
               <li className="myad-icon">
                 <FaPen />
-                Draft
+                Draft(0)
               </li>
               <li className="myad-icon">
                 <IoHandRightSharp />
-                Declined
+                Declined(0)
               </li>
               <li className="myad-icon">
                 <IoCloseCircleSharp />
-                Closed
+                Closed(1)
               </li>
               <li className="myad-icon">
                 <IoChevronDownCircleSharp />
-                All
+                All(2)
               </li>
             </ul>
           </div>

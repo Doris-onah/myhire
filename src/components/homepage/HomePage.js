@@ -14,9 +14,12 @@ function HomePage() {
       id="home"
       className="homepage   w-[100%]  bg-gradient-to-r from-purple-600 to-pink-600 "
     >
-      <Header />
-      <div>
-        <div className="mt-8 md:mt-[0]">
+      <div className="fixed-header">
+        <Header />
+      </div>
+
+      <div className="pt-[100px]">
+        <div className="">
           <Search />{" "}
         </div>
         <div className="">
@@ -26,7 +29,7 @@ function HomePage() {
         <div id="howitworks">
           <HowItWorks />
         </div>
-        <div id="Cars">
+        <div id="Cars ">
           <Cars />{" "}
         </div>
         <div id="choose">

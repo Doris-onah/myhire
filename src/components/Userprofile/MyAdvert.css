@@ -1,31 +1,47 @@
 .MyAdvert-header {
   width: 100%;
-  height: 150px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .myadvert-nav {
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.advert-text {
+  width: 50%;
 }
 .myadvert-nav ul {
-  width: 70%;
+  width: 100%;
   display: flex;
   font-size: 10px;
+
   justify-content: space-between;
 }
 .myad-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 12px;
 }
-.myad-ul {
+
+.advert-icon {
   display: none;
 }
-@media screen {
-  .myad-ul {
-    display: flex;
+
+@media screen and (min-width: 992px) {
+  .advert-icon {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .advert-text {
+    width: 20%;
   }
 }

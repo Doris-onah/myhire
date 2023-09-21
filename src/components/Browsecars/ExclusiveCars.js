@@ -49,12 +49,13 @@ function ExclusiveCars() {
 
                   <div className="md:block hidden flex md:w-[100%] items-center md:justify-center md:relative md:bottom-[60px]">
                     <div className="w-[100%] h-[40px] flex items-center justify-around">
-                      <button className="text-[15px] bg-white h-[40px]  w-[90px]">
+                      {" "}
+                      <button className="text-[15px] bg-white h-[40px] w-[100px]">
                         CALL NOW
                       </button>
-                      <button className="bg-white h-[40px] w-[90px]">
+                      <button className="text-[15px] bg-white h-[40px] w-[100px]">
                         MESSAGE
-                      </button>
+                      </button>{" "}
                     </div>
                   </div>
 
@@ -102,8 +103,9 @@ function ExclusiveCars() {
       </div>
       {/* /* pagination*/}
       <div className="flex items-center justify-center mb-8">
-        <button className="w-[100px] h-[40px] bg-white text-black">
-          show more
+        {" "}
+        <button className="text-[15px] bg-white h-[40px] w-[100px]">
+          Show More
         </button>
       </div>
     </div>

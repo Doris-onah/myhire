@@ -29,7 +29,7 @@ function UserHeader() {
           <div className="user-big">
             <ul className="user-nav-links ">
               <li className="hover:border-gray-400">
-                <Link to="Bookmark">
+                <Link to="/Account">
                   {" "}
                   <div className="nav-icon ">
                     <MdBookmark />

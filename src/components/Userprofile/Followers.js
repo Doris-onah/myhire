@@ -13,31 +13,30 @@ function Followers() {
       <div className="MyAdvert-header ">
         <div className="myadvert-nav">
           <h1 className="text-2xl">FOLLOWERS</h1>{" "}
-          <div className="md:block hidden">
+          <div className="advert-icon">
             <ul className="h">
               <li className="myad-icon">
                 <IoCheckmarkSharp />
-                Active
+                Active(3)
               </li>
               <li className="myad-icon">
-                <LuClock9 />
-                Reviewing
+                <LuClock9 /> Reviewing(2)
               </li>
               <li className="myad-icon">
                 <FaPen />
-                Draft
+                Draft(2)
               </li>
               <li className="myad-icon">
                 <IoHandRightSharp />
-                Declined
+                Declined(0)
               </li>
               <li className="myad-icon">
                 <IoCloseCircleSharp />
-                Closed
+                Closed(3)
               </li>
               <li className="myad-icon">
                 <IoChevronDownCircleSharp />
-                All
+                All(1)
               </li>
             </ul>
           </div>

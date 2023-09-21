@@ -19,7 +19,7 @@ function HeroSection() {
                 The Car Rental Service You Can Trust
               </h2>
               <h1 className="text-4xl font-extrabold  ">
-                LOOKING FOR A FASTER AND EASIER WAY TO HIRE A VEHICLE?
+                LOOKING FOR A FAST AND EASIER WAY TO HIRE A VEHICLE?
               </h1>
               <div className="mt-8">
                 <p className=" text-[18px] ">

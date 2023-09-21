@@ -13,31 +13,31 @@ function FeedBack() {
       <div className="MyAdvert-header ">
         <div className="myadvert-nav">
           <h1 className="text-2xl">FEEDBACK</h1>{" "}
-          <div className="md:block hidden">
+          <div className="advert-icon">
             <ul className="h">
               <li className="myad-icon">
                 <IoCheckmarkSharp />
-                Active
+                Active(2)
               </li>
               <li className="myad-icon">
                 <LuClock9 />
-                Reviewing
+                Reviewing(4)
               </li>
               <li className="myad-icon">
                 <FaPen />
-                Draft
+                Draft(2)
               </li>
               <li className="myad-icon">
                 <IoHandRightSharp />
-                Declined
+                Declined(3)
               </li>
               <li className="myad-icon">
                 <IoCloseCircleSharp />
-                Closed
+                Closed(0)
               </li>
               <li className="myad-icon">
                 <IoChevronDownCircleSharp />
-                All
+                All(1)
               </li>
             </ul>
           </div>
