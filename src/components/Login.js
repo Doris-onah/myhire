@@ -30,7 +30,7 @@ function Login() {
                     type="email"
                     name="email"
                     id="email"
-                    className="bg-gray-50 h-[60px] border border-gray-300 text-gray-900 sm:text-sm rounded-lg   block w-full p-2.5   dark:placeholder-gray-400  "
+                    className="bg-[#F2DEFF] h-[60px] border border-gray-300 text-gray-900 sm:text-sm rounded-lg   block w-full p-2.5 "
                     autoComplete="email"
                     placeholder="@ EMAIL"
                     required=""
@@ -45,7 +45,7 @@ function Login() {
                     id="password"
                     placeholder="••••••••"
                     autoComplete="password"
-                    className="bg-gray-50 h-[60px] border border-gray-300 text-gray-900 sm:text-sm rounded-lg   block w-full p-2.5   dark:placeholder-gray-400"
+                    className="bg-[#F2DEFF] h-[60px] border border-gray-300 text-gray-900 sm:text-sm rounded-lg   block w-full p-2.5  "
                     required=""
                   />
                 </div>

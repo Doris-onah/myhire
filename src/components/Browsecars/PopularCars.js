@@ -16,7 +16,7 @@ function PopularCars() {
       .then((data) => {
         setCar(data);
       });
-  }, []);
+  });
 
   const PER_PAGE = 8;
   const pages = 5;

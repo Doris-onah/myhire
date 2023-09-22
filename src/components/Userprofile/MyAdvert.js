@@ -54,7 +54,7 @@ function MyAdvert() {
         <div className="w-[100%] h-[90%]  ">
           <div className=" bg-[#F2DEFF] md:w-[45%] w-[100%] h-[50%] flex justify-center items-center rounded-[10px]">
             <div className="mobile-advert text-[18px] flex  md:w-[95%] w-[100%] h-[90%] justify-between items-center justify-end ">
-              <div className="bg-red-900 w-[60%] h-[100%] rounded-[10px]">
+              <div className="bg-white w-[60%] h-[100%] rounded-[10px]">
                 i am the car image
               </div>
               <div className=" w-[37%] h-[100%] flex flex-col items-center justify-center ">

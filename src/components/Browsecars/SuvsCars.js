@@ -1,9 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "../Browsecars/AllCar.css";
-import { HiUserAdd } from "react-icons/hi";
+
 import { SlCalender } from "react-icons/sl";
-import { FaCar } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 function SuvsCars() {
@@ -18,7 +17,7 @@ function SuvsCars() {
       .then((data) => {
         setSuv(data);
       });
-  }, []);
+  });
 
   const PER_PAGE = 8;
   const pages = 10;

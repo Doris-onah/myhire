@@ -20,6 +20,7 @@ import Notifications from "./components/userAccount/Notifications";
 import Bookmark from "./components/userAccount/Bookmark";
 import Chat from "./components/userAccount/Chat";
 import UserMenu from "./components/userAccount/UserMenu";
+import UploadCar from "./components/userAccount/UploadCar";
 function App() {
   return (
     <div className="App">
@@ -39,7 +40,7 @@ function App() {
             <Route path="Chat" element={<Chat />} />
             <Route path="Notifications" element={<Notifications />} />
             <Route path="UserMenu" element={<UserMenu />} />
-
+            <Route path="UploadCar" element={<UploadCar />} />
             <Route path="UserProfile" element={<UserProfile />}>
               <Route index element={<MyAdvert />} />
               <Route path="Followers" element={<Followers />} />

@@ -10,6 +10,7 @@ import { HiBars4 } from "react-icons/hi2";
 import { IoMdNotifications } from "react-icons/io";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import "./UserHeader.css";
+import { AiOutlineUpload } from "react-icons/ai";
 function UserHeader() {
   const [show, setShow] = useState(false);
 
@@ -58,6 +59,14 @@ function UserHeader() {
                   </div>
                 </Link>
               </li>
+              <li className="hover:border-gray-400">
+                <Link to="UploadCar">
+                  {" "}
+                  <div className="nav-icon ">
+                    <AiOutlineUpload />
+                  </div>
+                </Link>
+              </li>
               <div className="">
                 <li className="flex flex-row  justify-between  w-[160px] h-[100%]">
                   <Link to="UserProfile">
@@ -76,7 +85,7 @@ function UserHeader() {
               </div>
             </ul>
           </div>
-
+          {/* forsammscreen */}
           <div className="small">
             {" "}
             <ul className="user-nav-links ">
@@ -127,6 +136,18 @@ function UserHeader() {
                     }}
                   >
                     <HiBars4 />
+                  </div>
+                </Link>
+              </li>{" "}
+              <li>
+                <Link to="UploadCar">
+                  <div
+                    className="nav-icon"
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                  >
+                    <AiOutlineUpload />
                   </div>
                 </Link>
               </li>

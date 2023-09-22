@@ -16,7 +16,7 @@ function SedansCars() {
       .then((data) => {
         setSedan(data);
       });
-  }, []);
+  });
 
   const PER_PAGE = 8;
   const pages = 5;
