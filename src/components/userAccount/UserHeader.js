@@ -45,11 +45,7 @@ function UserHeader() {
                   </div>
                 </Link>
               </li>
-              <li>
-                <Link to="CarDetails">
-                  <div className="nav-icon">car</div>
-                </Link>
-              </li>
+
               <li>
                 <Link to="Notifications">
                   <div className="nav-icon">
