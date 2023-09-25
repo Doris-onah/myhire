@@ -21,6 +21,7 @@ import Bookmark from "./components/userAccount/Bookmark";
 import Chat from "./components/userAccount/Chat";
 import UserMenu from "./components/userAccount/UserMenu";
 import UploadCar from "./components/userAccount/UploadCar";
+import CarDetails from "./components/userAccount/CarDetails";
 function App() {
   return (
     <div className="App">
@@ -39,6 +40,7 @@ function App() {
             <Route index element={<Bookmark />} />
             <Route path="Chat" element={<Chat />} />
             <Route path="Notifications" element={<Notifications />} />
+            <Route path="CarDetails" element={<CarDetails />} />
             <Route path="UserMenu" element={<UserMenu />} />
             <Route path="UploadCar" element={<UploadCar />} />
             <Route path="UserProfile" element={<UserProfile />}>

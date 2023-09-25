@@ -38,11 +38,16 @@ function UserHeader() {
                 </Link>
               </li>
               <li>
-                <Link to="chat">
+                <Link to="Chat">
                   {" "}
                   <div className="nav-icon">
                     <BsFillChatDotsFill />
                   </div>
+                </Link>
+              </li>
+              <li>
+                <Link to="CarDetails">
+                  <div className="nav-icon">car</div>
                 </Link>
               </li>
               <li>

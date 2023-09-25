@@ -3,7 +3,7 @@ import UserHeader from "./UserHeader";
 
 function Account() {
   return (
-    <div className="">
+    <div className="w-full flex flex-col justify-center items-center">
       <UserHeader />
       <Outlet />
     </div>

@@ -1,8 +1,42 @@
 import React from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 function UploadCar() {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    name: "",
+    category: "",
+    color: "",
+    location: "",
+    payload: "",
+    driver: "",
+    problems: "",
+    serviced: "",
+    restriction: "",
+    issurance: "",
+    // Other form fields go here
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    // Create a new object with updated form data
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate("/Account/CarDetails");
+
+    console.log(formData); // For demonstration, log the form data
+  };
+
   return (
-    <div className="bg-[#F2DEFF] flex justify-center align-center  text-[white] ">
-      <div className="w-[90%] h-[100%] flex items-center justify-center">
+    <div className="bg-[#F2DEFF]  flex justify-center align-center md:w-full md:h-[100%] h-[100%] text-[white] text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+      <div className="md:w-[90%] w-[95%] h-[100%] flex items-center justify-center">
         <div className="md:w-[90%] w-[100%] md:h-[1450px] h-[1000px]  flex flex-col items-center justify-between">
           {" "}
           <div className="w-[100%] h-[10%]  flex items-center justify-center">
@@ -10,16 +44,21 @@ function UploadCar() {
               <h1 className="text-center "> Upload your vehicle</h1>
             </div>
           </div>
-          <div className="w-[100%] h-[90%] bg-[#5D3578] flex justify-center items-center  rounded-[10px]">
+          {/* <form onSubmit={handleSubmit}> */}
+          <form
+            onSubmit={handleSubmit}
+            className="w-[100%] h-[90%] bg-[#5D3578] flex justify-center items-center  rounded-[10px]"
+          >
             {" "}
             <div className=" w-[90%] md:w-[80%] h-[95%] text-black flex flex-col justify-between rounded-[10px]">
               <input
                 type="Name"
                 name="Name"
-                id="Name"
                 className="bg-[#F2DEFF] md:w-[100%] md:h-[70px] h-[50px] border placeholder-black border-gray-300 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  "
                 autoComplete="name"
                 placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
                 required=""
               />
               <input
@@ -30,6 +69,8 @@ function UploadCar() {
                 autoComplete="category"
                 placeholder="Category"
                 required=""
+                value={formData.category}
+                onChange={handleChange}
               />
               <input
                 type="color-type"
@@ -39,6 +80,8 @@ function UploadCar() {
                 autoComplete="color"
                 placeholder="Color"
                 required=""
+                value={formData.color}
+                onChange={handleChange}
               />{" "}
               <input
                 type="location"
@@ -48,6 +91,8 @@ function UploadCar() {
                 autoComplete="location"
                 placeholder="Where is your location"
                 required=""
+                value={formData.location}
+                onChange={handleChange}
               />
               <div className=" text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-white">
                 <h1 className="text-18px">Add Photo</h1>
@@ -70,10 +115,12 @@ function UploadCar() {
                 type="destination"
                 name="destination"
                 id="destination"
-                className="bg-[#F2DEFF] md:w-[100%] md:h-[70px] h-[50px] border border-gray-300"
-                autoComplete="destionatio "
+                className="bg-[#F2DEFF] md:w-[100%] md:h-[70px] h-[50px] border border-gray-300 placeholder-black"
+                autoComplete="destionation"
                 placeholder="Available Destinations"
                 required=""
+                value={formData.destination}
+                onChange={handleChange}
               />{" "}
               <input
                 type="issurance"
@@ -83,15 +130,19 @@ function UploadCar() {
                 autoComplete="issurance "
                 placeholder="Is your Car Insured?"
                 required=""
+                value={formData.issurance}
+                onChange={handleChange}
               />{" "}
               <input
                 type="restriction"
-                name="restrict"
+                name="restriction"
                 id="restriction"
                 className="bg-[#F2DEFF] md:w-[100%] md:h-[70px] h-[50px] border border-gray-300 placeholder-black text-gray-900 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                 autoComplete="restrict"
                 placeholder="Any item restriction?"
                 required=""
+                value={formData.restriction}
+                onChange={handleChange}
               />{" "}
               <input
                 type="payload"
@@ -101,6 +152,8 @@ function UploadCar() {
                 autoComplete="payload"
                 placeholder="Vehicle Payload Capacity"
                 required=""
+                value={formData.payload}
+                onChange={handleChange}
               />{" "}
               <input
                 type="driver"
@@ -110,15 +163,19 @@ function UploadCar() {
                 autoComplete="driver"
                 placeholder="Do you have a personal Driver?"
                 required=""
+                value={formData.driver}
+                onChange={handleChange}
               />{" "}
               <input
                 type="problems"
-                name="problem"
+                name="problems"
                 id="problem"
                 className="bg-[#F2DEFF] md:w-[100%] md:h-[70px] h-[50px] border border-gray-300 placeholder-black text-gray-900 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                 autoComplete="problem"
                 placeholder="Does your Car have any fault?"
                 required=""
+                value={formData.problems}
+                onChange={handleChange}
               />{" "}
               <input
                 type="serviced"
@@ -128,12 +185,14 @@ function UploadCar() {
                 autoComplete="service"
                 placeholder="Last Serviced date"
                 required=""
+                value={formData.serviced}
+                onChange={handleChange}
               />
               <div className="bg-gradient-to-r from-purple-600 to-pink-600 md:w-[100%] md:h-[70px] h-[50px] border border-gray-300 flex justify-center items-center rounded-[10px] text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-3xl text-white">
-                <button>Submit my Response</button>
+                <button type="submit">Submit my Response</button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
