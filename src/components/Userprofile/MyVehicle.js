@@ -87,25 +87,28 @@ function MyVehicle() {
       <div className="w-[95%] h-[90%]  flex items-center justify-center">
         {" "}
         <div className="w-[100%] h-[90%]  ">
-          <div className=" bg-[#F2DEFF] md:w-[45%] w-[100%] h-[50%] flex justify-center items-center rounded-[10px]">
-            <div className="mobile-advert text-[18px] flex  md:w-[95%] w-[100%] h-[90%] justify-between items-center justify-end ">
-              <div className="bg-red-900 w-[60%] h-[100%] rounded-[10px]">
+          {" "}
+          <div className="bg-[#F2DEFF] md:w-[45%] w-[100%] md:h-[50%] h-[50%] flex flex-row justify-center items-center rounded-[10px]">
+            <div className="mobile-advert text-[18px] flex flex-col md:flex md:flex-row md:w-[95%] w-[90%] md:h-[90%] h-[90%] justify-between items-center">
+              <div className="bg-white md:w-[60%] md:h-[100%]  h-[80%] w-[100%] rounded-[10px]">
                 i am the car image
               </div>
-              <div className=" w-[37%] h-[100%] flex flex-col items-center justify-center ">
-                <div className="w-[100%] h-[80%]  flex flex-col items-center justify-center">
+              <div className=" md:w-[37%]   w-[100%] md:h-[100%] h-[60%] flex flex-col items-center  justify-center ">
+                <div className="w-[100%] md:h-[80%] h-[55%] flex flex-col items-center justify-center">
                   <div className="w-[100%] h-[100%] text-black text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
                     <h1 className="">Toyota Venza</h1>
-                    <p className="mobile-ad text-xs sm:text-base">LARGE</p>
+                    <p className="mobile-ad text-xs sm:text-base md:block hidden">
+                      LARGE
+                    </p>
                     <p className="text-xs sm:text-base">Lagos Nigeria</p>
-                    <p className="mobile-ad text-xs sm:text-base">
+                    <p className="mobile-ad text-xs sm:text-base md:block hidden">
                       Osun, Ondo ,Ibadan
                     </p>
                     <p className="text-xs sm:text-base">20,000 NGN per hire</p>
                   </div>
                 </div>
 
-                <div className="w-[100%] h-[20%] flex items-center justify-center">
+                <div className="w-[100%] md:h-[20%]   flex items-center justify-center">
                   <div className="btn flex justify-between items-center w-[100%] h-[100%] text-white">
                     <button className=" rounded-[20px]  bg-gradient-to-r from-purple-800 to-pink-600 w-[90px] h-[40px]  text-[12px]">
                       New Ads

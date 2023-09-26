@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import { BsFillPersonFill } from "react-icons/bs";
 function UserProfile() {
   return (
-    <div className="bg-purple-100 flex justify-center align-center md:h-[90vh] h-[90vh] text-[white] text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+    <div className="bg-purple-100 w-full flex justify-center align-center md:h-[90vh] h-[90vh] text-[white] text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
       <div className="md:w-[90%] w-[99%]  h-[100%] flex justify-between align-center">
         <div className="md:w-[25%] w-[40%] h-[100%] gap-4 flex-col flex justify-center items-center ">
           <div className="w-[90%] h-[30%] rounded-[10px]  bg-[#5D3578] flex justify-center items-center">
