@@ -3,6 +3,7 @@ function Chat() {
     <div>
       this chat page is under construction
       <p>fghjkl</p>
+      <p>more rubbish added</p>
     </div>
   );
 }
