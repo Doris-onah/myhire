@@ -1,32 +1,16 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import "../Browsecars/AllCar.css";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
-
+import { FormContext } from "../userAccount/FormContext";
+import { useContext } from "react";
 function SedansCars() {
-  const [sedan, setSedan] = useState([]);
-  const [page, setPage] = useState(3);
-
-  useEffect(() => {
-    fetch(`https://randomuser.me/api/?page=${page}&results=30&seed=abc`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setSedan(data);
-      });
-  });
-
-  const PER_PAGE = 8;
-  const pages = 5;
-  // const total = users?.results?.length;
-  const skip = page * PER_PAGE - PER_PAGE;
-
+  const { cars, PER_PAGE, skip, prevPage, nextPage, page, pages } =
+    useContext(FormContext);
   return (
     <div id="SedansCars flex items-center justify-center">
       <div className="flex w-full h-[100%] md:grid md:grid-cols-4 gap-4 grid grid-cols-1">
-        {sedan?.results?.slice(skip, skip + PER_PAGE).map((sedan, index) => {
+        {cars?.results?.slice(skip, skip + PER_PAGE).map((sedan, index) => {
           return (
             <div
               className=" md:w-[100%] w-[100%]  md:h-[100%] h-[250px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center "
@@ -102,8 +86,20 @@ function SedansCars() {
       {/* /* pagination*/}
       <div className="flex items-center justify-center mb-8">
         {" "}
-        <button className="text-[15px] bg-white h-[40px] w-[100px]">
-          Show More
+        <button
+          className="text-[15px] bg-white h-[40px] w-[100px]"
+          onClick={prevPage}
+          disabled={page <= 1}
+        >
+          p r e v
+        </button>{" "}
+        <button
+          className="text-[15px] bg-white h-[40px] w-[100px]"
+          onClick={nextPage}
+          disabled={page >= pages}
+          aria-disabled={page >= pages}
+        >
+          next
         </button>
       </div>
     </div>

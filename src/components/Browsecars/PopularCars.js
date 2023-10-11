@@ -1,42 +1,28 @@
 import React from "react";
-import { useEffect, useState } from "react";
+
 import "../Browsecars/AllCar.css";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
-
+import { useContext } from "react";
+import { FormContext } from "../userAccount/FormContext";
 function PopularCars() {
-  const [car, setCar] = useState([]);
-  const [page, setPage] = useState(1);
-
-  useEffect(() => {
-    fetch(`https://randomuser.me/api/?page=${page}&results=30&seed=abc`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setCar(data);
-      });
-  });
-
-  const PER_PAGE = 8;
-  const pages = 5;
-  // const total = users?.results?.length;
-  const skip = page * PER_PAGE - PER_PAGE;
+  const { cars, PER_PAGE, skip, prevPage, nextPage, page, pages } =
+    useContext(FormContext);
 
   return (
     <div id="PopularCars">
       <div className="flex w-full h-[100%]   md:grid md:grid-cols-4 gap-4 grid grid-cols-1">
-        {car?.results?.slice(skip, skip + PER_PAGE).map((popular, index) => {
+        {cars?.results?.slice(skip, skip + PER_PAGE).map((car, index) => {
           return (
             <div
               className=" md:w-[100%] md:h-[100%] h-[250px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center "
-              key={`${popular.id}_${index}`}
+              key={`${car.id}_${index}`}
             >
               <div className="flex md:flex-col items-center justify-center w-[95%] h-[90%] rounded-[20px] md:rounded-0 md:bg-inherit">
                 <div className=" md:w-full w-[65%] md:h-[100%] h-[100%] flex items-center justify-center">
                   <div className="w-[100%]  h-[100%] flex items-center justify-center">
                     <img
-                      src={popular.picture.medium}
+                      src={car.picture.medium}
                       className="md:w-full w-[100%] h-[100%] md:rounded-[15px]"
                       alt=""
                     />
@@ -96,13 +82,24 @@ function PopularCars() {
             </div>
           );
         })}
-        ;
       </div>
       {/* /* pagination*/}
       <div className="flex items-center justify-center mb-8">
         {" "}
-        <button className="text-[15px] bg-white h-[40px] w-[100px]">
-          Show More
+        <button
+          className="text-[15px] bg-white h-[40px] w-[100px]"
+          onClick={prevPage}
+          disabled={page <= 1}
+        >
+          Prev
+        </button>{" "}
+        <button
+          className="text-[15px] bg-white h-[40px] w-[100px]"
+          onClick={nextPage}
+          disabled={page >= pages}
+          aria-disabled={page >= pages}
+        >
+          N e x t
         </button>
       </div>
     </div>

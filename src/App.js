@@ -22,41 +22,45 @@ import Chat from "./components/userAccount/Chat";
 import UserMenu from "./components/userAccount/UserMenu";
 import UploadCar from "./components/userAccount/UploadCar";
 import CarDetails from "./components/userAccount/CarDetails";
+import FormContextProvider from "./components/userAccount/FormContext";
+
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
+    <FormContextProvider>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
 
-          <Route path="Cars" element={<HomePage />}>
-            <Route index path="PopularCars" element={<PopularCars />} />
-            <Route path="SuvsCars" element={<SuvsCars />} />
-            <Route path="SedanCars" element={<SedanCars />} />
-            <Route path="ExclusiveCars" element={<ExclusiveCars />} />
-          </Route>
-
-          <Route path="Account" element={<Account />}>
-            <Route index element={<Bookmark />} />
-            <Route path="Chat" element={<Chat />} />
-            <Route path="Notifications" element={<Notifications />} />
-            <Route path="CarDetails" element={<CarDetails />} />
-            <Route path="UserMenu" element={<UserMenu />} />
-            <Route path="UploadCar" element={<UploadCar />} />
-            <Route path="UserProfile" element={<UserProfile />}>
-              <Route index element={<MyAdvert />} />
-              <Route path="Followers" element={<Followers />} />
-              <Route path="MyFaq" element={<MyFaq />} />
-              <Route path="FeedBack" element={<FeedBack />} />
-              <Route path="MyVehicle" element={<MyVehicle />} />
+            <Route path="Cars" element={<HomePage />}>
+              <Route index path="PopularCars" element={<PopularCars />} />
+              <Route path="SuvsCars" element={<SuvsCars />} />
+              <Route path="SedanCars" element={<SedanCars />} />
+              <Route path="ExclusiveCars" element={<ExclusiveCars />} />
             </Route>
-          </Route>
 
-          <Route path="Register" element={<Register />} />
-          <Route path="Login" element={<Login />} />
-        </Route>
-      </Routes>
-    </div>
+            <Route path="Account" element={<Account />}>
+              <Route index element={<Bookmark />} />
+              <Route path="Chat" element={<Chat />} />
+              <Route path="Notifications" element={<Notifications />} />
+              <Route path="CarDetails" element={<CarDetails />} />
+              <Route path="UserMenu" element={<UserMenu />} />
+              <Route path="UploadCar" element={<UploadCar />} />
+              <Route path="UserProfile" element={<UserProfile />}>
+                <Route index element={<MyAdvert />} />
+                <Route path="Followers" element={<Followers />} />
+                <Route path="MyFaq" element={<MyFaq />} />
+                <Route path="FeedBack" element={<FeedBack />} />
+                <Route path="MyVehicle" element={<MyVehicle />} />
+              </Route>{" "}
+            </Route>
+
+            <Route path="Register" element={<Register />} />
+            <Route path="Login" element={<Login />} />
+          </Route>
+        </Routes>{" "}
+      </div>
+    </FormContextProvider>
   );
 }
 

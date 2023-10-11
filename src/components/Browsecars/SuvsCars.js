@@ -1,33 +1,18 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import "../Browsecars/AllCar.css";
 
+import "../Browsecars/AllCar.css";
+import { useContext } from "react";
+import { FormContext } from "../userAccount/FormContext";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
 
 function SuvsCars() {
-  const [suv, setSuv] = useState([]);
-  const [page, setPage] = useState(4);
-
-  useEffect(() => {
-    fetch(`https://randomuser.me/api/?page=${page}&results=30&seed=abc`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setSuv(data);
-      });
-  });
-
-  const PER_PAGE = 8;
-  const pages = 10;
-  // const total = users?.results?.length;
-  const skip = page * PER_PAGE - PER_PAGE;
-
+  const { pages, page, prevPage, nextPage, cars, skip, PER_PAGE } =
+    useContext(FormContext);
   return (
     <div id="SuvsCars">
       <div className="flex w-full h-[100%]   md:grid md:grid-cols-4 gap-4 grid grid-cols-1">
-        {suv?.results?.slice(skip, skip + PER_PAGE).map((suv, index) => {
+        {cars?.results?.slice(skip, skip + PER_PAGE).map((suv, index) => {
           return (
             <div
               className=" md:w-[100%] md:h-[100%] h-[250px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center "
@@ -103,8 +88,20 @@ function SuvsCars() {
       {/* /* pagination*/}
       <div className="flex items-center justify-center mb-8">
         {" "}
-        <button className="text-[15px] bg-white h-[40px] w-[100px]">
-          Show More
+        <button
+          className="text-[15px] bg-white h-[40px] w-[100px]"
+          onClick={prevPage}
+          disabled={page <= 1}
+        >
+          p r e v
+        </button>{" "}
+        <button
+          className="text-[15px] bg-white h-[40px] w-[100px]"
+          onClick={nextPage}
+          disabled={page >= pages}
+          aria-disabled={page >= pages}
+        >
+          next
         </button>
       </div>
     </div>
