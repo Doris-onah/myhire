@@ -17,7 +17,7 @@ function FormContextProvider(props) {
     serviced: "",
     restriction: "",
     issurance: "",
-    file: null,
+    file: "",
   });
   const [cars, setCars] = useState([]);
   const [page, setPage] = useState(1);
@@ -36,10 +36,14 @@ function FormContextProvider(props) {
   const PER_PAGE = 8;
   const skip = page * PER_PAGE - PER_PAGE;
   const prevPage = () => {
-    setPage(page - 1);
+    if (page < 1) {
+      setPage(page - 1);
+    }
   };
   const nextPage = () => {
-    setPage(page + 1);
+    if (page >= 1) {
+      setPage(page + 1);
+    }
   };
 
   const handleChange = (event) => {

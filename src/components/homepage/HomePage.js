@@ -19,8 +19,14 @@ function HomePage() {
       </div>
 
       <div className="pt-[100px]">
-        <div className="">
-          <Search />{" "}
+        <div className=" md:h-[200px] flex justify-center items-center  ">
+          <div className="md:h-[150px] w-full text-center">
+            {" "}
+            <h1 className="md:text-4xl hidden md:block font-bold text-white">
+              What are you looking for?
+            </h1>
+            <Search />{" "}
+          </div>
         </div>
         <div className="">
           {" "}

@@ -18,7 +18,7 @@ function Header() {
     <div className=" header-container bg-gradient-to-r from-purple-600 to-pink-600">
       <div className="header">
         <div className="logo ">
-          <img src={logo} width="100px" height="100px" alt="logo" />
+          <img src={logo} width="170px" height="100px" alt="logo" />
         </div>
 
         <nav className={show ? "small" : "big"}>
@@ -69,14 +69,17 @@ function Header() {
           <div className="small">
             <ul className="nav-links ">
               <li>
-                <Link
-                  to="/"
-                  onClick={() => {
-                    setShow(!show);
-                  }}
-                >
-                  Home
-                </Link>
+                {" "}
+                <span onClick={home}>
+                  <a
+                    href="#home"
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                  >
+                    Home
+                  </a>
+                </span>
               </li>
 
               <li>

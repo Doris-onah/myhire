@@ -2,14 +2,10 @@ function Search() {
   return (
     <div
       id="search"
-      className="md:w-full w-[100%] md:h-[250px] h-[100px] flex items-center justify-center"
+      className="md:w-full w-[100%] md:h-[100%] h-[100px] flex items-center justify-center"
     >
       <div className="flex md:w-[90%] w-[100%] md:h-[90%]  flex-col items-center justify-center">
-        <div className="flex flex-col gap-4 items-center justify-center w-full">
-          <h1 className="md:text-4xl hidden md:block font-bold text-white">
-            What are you looking for?
-          </h1>
-
+        <div className="flex flex-col items-center justify-center w-full">
           <input
             type="text"
             placeholder="Search"

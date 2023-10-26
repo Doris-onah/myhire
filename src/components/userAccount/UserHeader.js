@@ -21,9 +21,9 @@ function UserHeader() {
 
   return (
     <div className=" header-con bg-gradient-to-r from-purple-600 to-pink-600">
-      <div className="user-header">
+      <div className="user-header ">
         <div className="user-logo">
-          <img src={logo} width="170px" height="170px" alt="logo" />
+          <img src={logo} width="100px" height="170px" alt="logo" />
         </div>
 
         <nav className={show ? "small" : "user-big"}>

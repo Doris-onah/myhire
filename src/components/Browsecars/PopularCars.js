@@ -84,7 +84,7 @@ function PopularCars() {
         })}
       </div>
       {/* /* pagination*/}
-      <div className="flex items-center justify-center mb-8">
+      <div className="flex items-center justify-center mt-8">
         {" "}
         <button
           className="text-[15px] bg-white h-[40px] w-[100px]"

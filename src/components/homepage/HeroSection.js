@@ -8,7 +8,10 @@ function HeroSection() {
     navigate("/");
   };
   return (
-    <div className=" md:h-[600px] md:w-full h-[100%] w-[100%] flex items-center  justify-center ">
+    <div
+      id="herosection"
+      className=" md:h-[600px] md:w-full h-[100%] w-[100%] flex items-center  justify-center "
+    >
       <div className=" md:w-[95%]  md:h-[100%] h-[100%] flex justify-center items-center flex-col md:flex-row  md:flex md:justify-center  ">
         <div className="flex-col md:flex-row w-[90%] h-[100%] flex items-center justify-between ">
           {/* this is hero write up */}
