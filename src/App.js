@@ -23,6 +23,7 @@ import UserMenu from "./components/userAccount/UserMenu";
 import UploadCar from "./components/userAccount/UploadCar";
 import CarDetails from "./components/userAccount/CarDetails";
 import FormContextProvider from "./components/userAccount/FormContext";
+import CarUploaded from "./components/userAccount/CarUploaded";
 
 function App() {
   return (
@@ -35,15 +36,20 @@ function App() {
             <Route path="Cars" element={<HomePage />}>
               <Route index path="PopularCars" element={<PopularCars />} />
               <Route path="SuvsCars" element={<SuvsCars />} />
-              <Route path="SedanCars" element={<SedanCars />} />
-              <Route path="ExclusiveCars" element={<ExclusiveCars />} />
+              <Route path="SedanCars" element={<SedanCars />} />{" "}
+              <Route path="CarDetails" element={<CarDetails />} />
+              <Route path="ExclusiveCars" element={<ExclusiveCars />}>
+                <Route
+                  path="/Cars/ExclusiveCars/:CarUploadedId"
+                  element={<CarUploaded />}
+                />
+              </Route>
             </Route>
 
             <Route path="Account" element={<Account />}>
               <Route index element={<Bookmark />} />
               <Route path="Chat" element={<Chat />} />
               <Route path="Notifications" element={<Notifications />} />
-              <Route path="CarDetails" element={<CarDetails />} />
               <Route path="UserMenu" element={<UserMenu />} />
               <Route path="UploadCar" element={<UploadCar />} />
               <Route path="UserProfile" element={<UserProfile />}>

@@ -7,10 +7,11 @@ import { useContext } from "react";
 function SedansCars() {
   const { cars, PER_PAGE, skip, prevPage, nextPage, page, pages } =
     useContext(FormContext);
+
   return (
     <div id="SedansCars flex items-center justify-center">
       <div className="flex w-full h-[100%] md:grid md:grid-cols-4 gap-4 grid grid-cols-1">
-        {cars?.results?.slice(skip, skip + PER_PAGE).map((sedan, index) => {
+        {cars?.slice(skip, skip + PER_PAGE).map((sedan, index) => {
           return (
             <div
               className=" md:w-[100%] w-[100%]  md:h-[100%] h-[250px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center "
@@ -20,7 +21,7 @@ function SedansCars() {
                 <div className=" md:w-full w-[65%] md:h-[100%] h-[100%] flex items-center justify-center">
                   <div className="w-[100%]  h-[100%] flex items-center justify-center">
                     <img
-                      src={sedan.picture.medium}
+                      src={sedan.photos?.photo}
                       className="md:w-full w-[100%] h-[100%] md:rounded-[15px]"
                       alt=""
                     />
@@ -28,7 +29,6 @@ function SedansCars() {
                 </div>
 
                 {/* for big screen section */}
-
                 <div className="md:block hidden  flex md:w-[100%] items-center md:justify-center md:relative md:bottom-[60px]">
                   <div className="w-[100%] h-[40px] flex items-center justify-around">
                     {" "}
@@ -46,20 +46,19 @@ function SedansCars() {
                   <div className=" w-[90%] h-[100%] flex flex-col items-center justify-center ">
                     <div className="w-[100%] h-[70%]">
                       <h1>
-                        Hyundai Space Box <br />
-                        $100 Daily
+                        {sedan.name} <br />${sedan.estimated_price}
                       </h1>
                     </div>
                     <div className="w-[100%] h-[80%]">
                       <span className="w-[100%] h-[100%] flex flex-col justify-center gap-4">
                         <div className="flex items-center ">
                           <span className="flex gap-2 items-center justify-center">
-                            <SlCalender /> <p>2022 model</p>
+                            <SlCalender /> <p>{sedan.category}</p>
                           </span>
                         </div>
                         <div className="flex items-center ">
                           <span className="flex gap-2 items-center justify-center">
-                            <FaLocationDot /> <p>Lagos</p>
+                            <FaLocationDot /> <p>{sedan.location}</p>
                           </span>
                         </div>
                       </span>

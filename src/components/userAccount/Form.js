@@ -1,14 +1,11 @@
 import React from "react";
-import { useContext } from "react";
-import { FormContext } from "../userAccount/FormContext";
+// import { useContext } from "react";
+// import { FormContext } from "../userAccount/FormContext";
 function Form() {
-  const { formData, handleChange, handleSubmit } = useContext(FormContext);
+  // const { formData, handleChange, handleSubmit } = useContext(FormContext);
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="w-[100%] h-[90%] bg-[#5D3578] flex justify-center items-center  rounded-[10px]"
-    >
+    <form className="w-[100%] h-[90%] bg-[#5D3578] flex justify-center items-center  rounded-[10px]">
       {" "}
       <div className=" w-[90%] md:w-[80%] h-[95%] text-black flex flex-col justify-between rounded-[10px]">
         <input
@@ -17,8 +14,8 @@ function Form() {
           className="bg-[#F2DEFF] md:w-[100%] md:h-[70px] h-[50px] border placeholder-black border-gray-300 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  "
           autoComplete="name"
           placeholder="Name"
-          value={formData.Name}
-          onChange={handleChange}
+          // value={formData.Name}
+          // onChange={handleChange}
           required=""
         />
         <input
@@ -29,8 +26,8 @@ function Form() {
           autoComplete="category"
           placeholder="Category"
           required=""
-          value={formData.category}
-          onChange={handleChange}
+          // value={formData.category}
+          // onChange={handleChange}
         />
         <input
           type="color-type"
@@ -40,8 +37,8 @@ function Form() {
           autoComplete="color"
           placeholder="Color"
           required=""
-          value={formData.color}
-          onChange={handleChange}
+          // value={formData.color}
+          // onChange={handleChange}
         />{" "}
         <input
           type="location"
@@ -51,8 +48,8 @@ function Form() {
           autoComplete="location"
           placeholder="Where is your location"
           required=""
-          value={formData.location}
-          onChange={handleChange}
+          // value={formData.location}
+          // onChange={handleChange}
         />
         <div className=" text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-white">
           <h1 className="text-18px">Add Photo</h1>
@@ -70,8 +67,8 @@ function Form() {
             accept="image/jpg, image/jpeg, image/png"
             placeholder="+"
             autoComplete="upload file"
-            value={formData.file}
-            onChange={handleChange}
+            // value={formData.file}
+            // onChange={handleChange}
           />
         </div>{" "}
         <input
@@ -82,8 +79,8 @@ function Form() {
           autoComplete="destionation"
           placeholder="Available Destinations"
           required=""
-          value={formData.destination}
-          onChange={handleChange}
+          // value={formData.destination}
+          // onChange={handleChange}
         />{" "}
         <input
           type="issurance"
@@ -93,8 +90,8 @@ function Form() {
           autoComplete="issurance "
           placeholder="Is your Car Insured?"
           required=""
-          value={formData.issurance}
-          onChange={handleChange}
+          // value={formData.issurance}
+          // onChange={handleChange}
         />{" "}
         <input
           type="restriction"
@@ -104,8 +101,8 @@ function Form() {
           autoComplete="restrict"
           placeholder="Any item restriction?"
           required=""
-          value={formData.restriction}
-          onChange={handleChange}
+          // value={formData.restriction}
+          // onChange={handleChange}
         />{" "}
         <input
           type="payload"
@@ -115,8 +112,8 @@ function Form() {
           autoComplete="payload"
           placeholder="Vehicle Payload Capacity"
           required=""
-          value={formData.payload}
-          onChange={handleChange}
+          // value={formData.payload}
+          // onChange={handleChange}
         />{" "}
         <input
           type="driver"
@@ -126,8 +123,8 @@ function Form() {
           autoComplete="driver"
           placeholder="Do you have a personal Driver?"
           required=""
-          value={formData.driver}
-          onChange={handleChange}
+          // value={formData.driver}
+          // onChange={handleChange}
         />{" "}
         <input
           type="problems"
@@ -137,8 +134,8 @@ function Form() {
           autoComplete="problem"
           placeholder="Does your Car have any fault?"
           required=""
-          value={formData.problems}
-          onChange={handleChange}
+          // value={formData.problems}
+          // onChange={handleChange}
         />{" "}
         <input
           type="serviced"
@@ -148,13 +145,11 @@ function Form() {
           autoComplete="service"
           placeholder="Last Serviced date"
           required=""
-          value={formData.serviced}
-          onChange={handleChange}
+          // value={formData.serviced}
+          // onChange={handleChange}
         />
         <div className="bg-gradient-to-r from-purple-600 to-pink-600 md:w-[100%] md:h-[70px] h-[50px] border border-gray-300 flex justify-center items-center rounded-[10px] text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-3xl text-white">
-          <button type="submit" onClick={handleSubmit}>
-            Submit my Response
-          </button>
+          <button type="submit">Submit my Response</button>
         </div>
       </div>
     </form>

@@ -1,35 +1,25 @@
 import React from "react";
 import { useState, createContext } from "react";
-import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+
 export const FormContext = createContext();
 
 function FormContextProvider(props) {
-  const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    name: "",
-    category: "",
-    color: "",
-    location: "",
-    payload: "",
-    driver: "",
-    problems: "",
-    serviced: "",
-    restriction: "",
-    issurance: "",
-    file: "",
-  });
   const [cars, setCars] = useState([]);
   const [page, setPage] = useState(1);
 
   const pages = 50;
   useEffect(() => {
-    fetch(`https://randomuser.me/api/?results=100&seed=abc`)
+    fetch(`https://myhireng1.pythonanywhere.com/api/v1/car/`)
       .then((response) => {
+        console.log(response);
         return response.json();
       })
-      .then((data) => {
-        setCars(data);
+      .then((response) => {
+        setCars(response);
+      })
+      .catch((error) => {
+        console.error(error);
       });
   }, [page]);
 
@@ -46,29 +36,26 @@ function FormContextProvider(props) {
     }
   };
 
-  const handleChange = (event) => {
-    const { name, value, file } = event.target;
+  // const handleChange = (event) => {
+  //   const { name, value, file } = event.target;
 
-    setFormData({
-      ...formData,
-      [name]: value,
-      file: file,
-    });
-  };
+  //   setCars({
+  //     ...Cars,
+  //     [name]: value,
+  //     file: file,
+  //   });
+  // };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (formData) {
-      navigate("/Account/CarDetails");
-    } else {
-      alert("All fields are required.");
-    }
-    console.log(formData);
-  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   // if (formData) {
+  //   //   navigate("/Account/CarDetails");
+  //   // } else {
+  //   //   alert("All fields are required.");
+  //   // }
+  //   console.log(formData);
+  // };
   const value = {
-    formData,
-    handleChange,
-    handleSubmit,
     cars,
     page,
     prevPage,
@@ -83,3 +70,12 @@ function FormContextProvider(props) {
   );
 }
 export default FormContextProvider;
+// useEffect(() => {
+//   //   fetch(`https://randomuser.me/api/?results=100&seed=abc`)
+//   //     .then((response) => {
+//   //       return response.json();
+//   //     })
+//   //     .then((data) => {
+//   //       setCars(data);
+//   //     });
+//   // }, [page]);

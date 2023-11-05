@@ -44,11 +44,11 @@ function HeroSection() {
             <div className="mob md:hidden block flex justify-center items-center align-center w-[100%] h-[100%]">
               <span className="w-[90%] text-center">
                 <h1 className=" md:text-4xl font-bold text-3xl  uppercase text-white">
-                  FAST AND EASIER WAY TO RENT A CAR
+                  FAST AND EASIER WAY TO HIRE A CAR
                 </h1>
                 <p className=" text-white  text-[19px] py-[10px] ">
-                  Our Car Rentals online system <br /> designed to meet your
-                  specific needs of car rental business owners.
+                  Our Car online booking system <br /> designed to meet your
+                  specific need in no time.
                 </p>
               </span>
             </div>
