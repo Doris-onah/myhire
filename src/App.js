@@ -21,7 +21,6 @@ import Bookmark from "./components/userAccount/Bookmark";
 import Chat from "./components/userAccount/Chat";
 import UserMenu from "./components/userAccount/UserMenu";
 import UploadCar from "./components/userAccount/UploadCar";
-import CarDetails from "./components/userAccount/CarDetails";
 import FormContextProvider from "./components/userAccount/FormContext";
 import CarUploaded from "./components/userAccount/CarUploaded";
 
@@ -32,20 +31,18 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
-
             <Route path="Cars" element={<HomePage />}>
               <Route index path="PopularCars" element={<PopularCars />} />
               <Route path="SuvsCars" element={<SuvsCars />} />
               <Route path="SedanCars" element={<SedanCars />} />{" "}
-              <Route path="CarDetails" element={<CarDetails />} />
-              <Route path="ExclusiveCars" element={<ExclusiveCars />}>
-                <Route
-                  path="/Cars/ExclusiveCars/:CarUploadedId"
-                  element={<CarUploaded />}
-                />
-              </Route>
+              <Route path="ExclusiveCars" element={<ExclusiveCars />} />
             </Route>
-
+            <Route path="CarUploaded" element={<CarUploaded />}>
+              <Route
+                path="/CarUploaded/:CarUploadedId"
+                element={<CarUploaded />}
+              />
+            </Route>
             <Route path="Account" element={<Account />}>
               <Route index element={<Bookmark />} />
               <Route path="Chat" element={<Chat />} />
@@ -60,7 +57,6 @@ function App() {
                 <Route path="MyVehicle" element={<MyVehicle />} />
               </Route>{" "}
             </Route>
-
             <Route path="Register" element={<Register />} />
             <Route path="Login" element={<Login />} />
           </Route>

@@ -21,7 +21,7 @@ function FormContextProvider(props) {
       .catch((error) => {
         console.error(error);
       });
-  }, [page]);
+  }, [pages]);
 
   const PER_PAGE = 8;
   const skip = page * PER_PAGE - PER_PAGE;
@@ -36,25 +36,6 @@ function FormContextProvider(props) {
     }
   };
 
-  // const handleChange = (event) => {
-  //   const { name, value, file } = event.target;
-
-  //   setCars({
-  //     ...Cars,
-  //     [name]: value,
-  //     file: file,
-  //   });
-  // };
-
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   // if (formData) {
-  //   //   navigate("/Account/CarDetails");
-  //   // } else {
-  //   //   alert("All fields are required.");
-  //   // }
-  //   console.log(formData);
-  // };
   const value = {
     cars,
     page,
@@ -70,12 +51,3 @@ function FormContextProvider(props) {
   );
 }
 export default FormContextProvider;
-// useEffect(() => {
-//   //   fetch(`https://randomuser.me/api/?results=100&seed=abc`)
-//   //     .then((response) => {
-//   //       return response.json();
-//   //     })
-//   //     .then((data) => {
-//   //       setCars(data);
-//   //     });
-//   // }, [page]);

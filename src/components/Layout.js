@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
-    <div className="home w-[100%]  flex flex-col ">
+    <div>
       <Outlet />
     </div>
   );
