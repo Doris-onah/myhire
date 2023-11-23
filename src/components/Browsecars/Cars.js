@@ -7,10 +7,10 @@ function Cars() {
   const path = location.pathname;
   return (
     <div
-      id="Cars"
-      className="w-full h-[100%] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center"
+      id="cars"
+      className="w-full h-[100vh] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center"
     >
-      <div className="flex md:w-[90%] w-[90%]  flex-col items-center justify-center text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+      <div className="flex md:w-[90%] h-[90%] flex-col items-center justify-center text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
         <div className="md:my-20">
           {/* larger screen section */}
           <div className="hidden md:block">

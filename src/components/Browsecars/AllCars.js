@@ -1,6 +1,4 @@
 import React from "react";
-
-import "../Browsecars/AllCar.css";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
 import { useContext } from "react";
@@ -29,7 +27,7 @@ function AllCars() {
                         key={index}
                         src={car?.image}
                         className="md:w-full w-[100%] h-[100%] md:rounded-[15px]"
-                        alt="url"
+                        alt="url- car"
                       />
                     </div>
                   </Link>

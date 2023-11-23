@@ -1,7 +1,7 @@
 import { LiaFacebookF, LiaTwitter } from "react-icons/lia";
 import { TiSocialInstagram } from "react-icons/ti";
 import "./Footer.css";
-// import logo from "../../images/logo.png";
+
 import logo from "../images/logo.png";
 function Footer() {
   return (
@@ -71,24 +71,24 @@ function Footer() {
 
             {/* mobile screen footer section */}
             <section className="block md:hidden flex w-[100%] h-[100%] justify-between">
-              <span>
+              <div>
                 <h1 className="font-semibold">ABOUT-US</h1>
                 <ul className="footer-items">
                   <li className="mt-4">Whitepaper</li>
                   <li className="mt-4">Blogs</li>
                   <li className="mt-4">Activity</li>
                 </ul>
-              </span>
+              </div>
 
-              <span>
+              <div>
                 <h1 className="font-semibold">SUPPORT</h1>
                 <ul>
-                  <li className="mt-4">Help & Support</li>
+                  <li className="mt-4 ">Help & Support</li>
                   <li className="mt-4">Community</li>
                   <li className="mt-4">Author Profile</li>
                   <li className="mt-4">Contact</li>
                 </ul>
-              </span>
+              </div>
             </section>
           </div>
 

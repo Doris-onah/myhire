@@ -1,187 +1,79 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 import logo from "../../images/logo.png";
 import "./Header.css";
-
+// import { useNavigate } from "react-router-dom";
 function Header() {
-  const [show, setShow] = useState(false);
+  const [menu, setMenu] = useState(true);
+  // const navigate = useNavigate();
+  // const home = () => {
+  //   navigate("/");
+  // };
 
-  const navigate = useNavigate();
-  const home = () => {
-    navigate("/");
+  const handle = (e) => {
+    setMenu(!menu);
+    e.preventDefault();
   };
-
   return (
-    <div className=" header-container bg-gradient-to-r from-purple-600 to-pink-600">
-      <div className="header">
-        <div className="logo ">
-          <img src={logo} width="170px" height="100px" alt="logo" />
-        </div>
-
-        <nav className={show ? "small" : "big"}>
-          <div className="big">
-            <ul className="nav-links ">
-              <li>
-                <span onClick={home}>
-                  <a href="#home">Home</a>
-                </span>
-              </li>
-
-              <li>
-                <span onClick={home}>
-                  <a href="#howitworks">HowItWorks</a>
-                </span>
-              </li>
-
-              <li>
-                <span onClick={home}>
-                  <a href="#Cars">HireDetails</a>
-                </span>
-              </li>
-
-              <li>
-                <span onClick={home}>
-                  <a href="#choose">WhyChooseUs</a>
-                </span>
-              </li>
-
-              <li>
-                <span onClick={home}>
-                  <a href="#Review">Review</a>
-                </span>
-              </li>
-
-              <li className=" w-[2px] md:h-[20px] md:bg-gray-200 md:border-0 md:dark:bg "></li>
-              <li>
-                <Link to="/Register">Register</Link>
-              </li>
-              <li>
-                <div className="bg-white text-black border rounded-[4px] w-[70px] text-center">
-                  <Link to="/Login">Log in</Link>
-                </div>
-              </li>
-            </ul>
+    <div className="header text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl w-full ">
+      <div className="header-con items-center ">
+        <div className="head flex md:justify-center justify-between items-center w-[100%] h-[100%] ">
+          <div className=" header__left h-[90%] md:w-[20%] w-[30%] flex justify-center ">
+            <img src={logo} width="100%" height="100%" alt="logo " />
           </div>
 
-          <div className="small">
-            <ul className="nav-links ">
-              <li>
-                {" "}
-                <span onClick={home}>
-                  <a
-                    href="#home"
-                    onClick={() => {
-                      setShow(!show);
-                    }}
-                  >
-                    Home
-                  </a>
-                </span>
-              </li>
-
-              <li>
-                <span onClick={home}>
-                  <a
-                    href="#howitworks"
-                    onClick={() => {
-                      setShow(!show);
-                    }}
-                  >
-                    HowItWorks
-                  </a>
-                </span>
-              </li>
-
-              <li>
-                <span onClick={home}>
-                  <a
-                    href="#Cars"
-                    onClick={() => {
-                      setShow(!show);
-                    }}
-                  >
-                    HireDetails
-                  </a>
-                </span>
-              </li>
-
-              <li>
-                <span onClick={home}>
-                  <a
-                    href="#choose"
-                    onClick={() => {
-                      setShow(!show);
-                    }}
-                  >
-                    WhyChooseUs
-                  </a>
-                </span>
-              </li>
-
-              <li>
-                <span onClick={home}>
-                  <a
-                    href="#Review"
-                    onClick={() => {
-                      setShow(!show);
-                    }}
-                  >
-                    Review
-                  </a>
-                </span>
-              </li>
-
-              <li className=" w-[2px] md:h-[20px] md:bg-gray-200 md:border-0 md:dark:bg "></li>
-              <li>
-                <Link
-                  to="/Register"
-                  onClick={() => {
-                    setShow(!show);
-                  }}
-                >
-                  Register
-                </Link>
-              </li>
-              <li>
-                <div className="bg-white text-center text-black border rounded-[4px] w-[70px]">
-                  <Link
-                    to="/Login"
-                    onClick={() => {
-                      setShow(!show);
-                    }}
-                  >
-                    Log in
+          <div className="nav-con">
+            <div className="nav ">
+              <div onClick={handle} className="handle text-[40px] ">
+                {menu ? <GiHamburgerMenu /> : <GrClose />}
+              </div>
+              <ul className={menu ? "" : "nav-active"}>
+                <li>
+                  <span className="link" onClick={() => setMenu(!menu)}>
+                    <a href="/">Home</a>
+                  </span>
+                </li>{" "}
+                <li>
+                  <span className="link" onClick={() => setMenu(!menu)}>
+                    <a href="/#howitworks"> HowItWorks</a>
+                  </span>
+                </li>{" "}
+                <li>
+                  <span className="link" onClick={() => setMenu(!menu)}>
+                    <a href="/#cars">HireDetail</a>
+                  </span>
+                </li>{" "}
+                <li>
+                  <span className="link" onClick={() => setMenu(!menu)}>
+                    <a href="/#choose">WhyChooseUs</a>
+                  </span>
+                </li>{" "}
+                <li>
+                  <span className="link" onClick={() => setMenu(!menu)}>
+                    <a href="/#Review">Review</a>
+                  </span>
+                </li>{" "}
+                <li>
+                  {" "}
+                  <Link to="Register" onClick={() => setMenu(!menu)}>
+                    Register
                   </Link>
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="Login" onClick={() => setMenu(!menu)}>
+                    Login
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </nav>
-
-        <div className="navbar" onClick={() => setShow(!show)}>
-          {show ? (
-            <button
-              title="menu-close"
-              className="p-1 border border-white-300 focus:outline-none text-[28px] text-white"
-            >
-              <GrClose />
-            </button>
-          ) : (
-            <button
-              title="menu-open"
-              className="p-1 border border-white-300 focus:outline-none font-8 text-[28px] text-white"
-            >
-              <GiHamburgerMenu />
-            </button>
-          )}
         </div>
       </div>
-      <hr className="h-px w-full bg-gray-200 dark:bg-gray-700" />
     </div>
   );
 }
-
 export default Header;

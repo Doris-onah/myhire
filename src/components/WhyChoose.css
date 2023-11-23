@@ -1,162 +1,120 @@
-.why {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
 .whychooseus {
-    width: 95%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .box1 {
-    text-align: center;
-    width: 700px;
-    /* background-color: orange; */
-    margin-top: 30px;
+  text-align: center;
+  width: 700px;
+  height: 20%;
 }
-
-.box1 h1 {
-    font-size: 40px;
-}
-
-.box p {
-    font-size: 25px;
-}
-
 
 .box3 {
-    display: flex;
-    width: 100%;
-    height: 600px;
-    justify-content: space-around;
-    align-items: center;
-    /* background-color: chartreuse; */
+  display: flex;
+  width: 100%;
+  height: 450px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
 .box3-section2 {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: flex-end;
-
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  height: 150px;
+}
+
+.icon-3-tag {
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 60px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-screen {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .box3-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .box3 {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 90%;
-    height: 120px;
-}
+    width: 100%;
+    height: 180px;
+  }
+  .box1 {
+    text-align: center;
+    width: 100%;
+    height: 15%;
+  }
 
-.icon-3-tag {
+  .box3-section2 {
     display: flex;
-    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon-3-tag {
+    display: flex;
+    border-radius: 15px;
     border: 1px solid white;
     align-items: center;
     justify-content: center;
-    width: 75px;
-    height: 60px;
-    font-size: 20px;
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
     margin-bottom: 30px;
     color: white;
+  }
 
-}
-
-
-.img-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.small-screen {
+  .img-logo {
     display: none;
-}
-
-@media screen and (max-width: 990px) {
-
-    .whychooseus {
-        width: 95%;
-        height: 550px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .box3-section2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .image {
-        display: none;
-    }
-
-    .box1 {
-        text-align: center;
-        width: 90%;
-        margin-top: 30px;
-    }
-
-    .box3-section2 {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    /* .icon-3 {
-        display: flex;
-        border-radius: 20px;
-        border: 1px solid white;
-        align-items: center;
-        justify-content: center;
-        width: 80px;
-        height: 60px;
-        font-size: 18px;
-        margin-bottom: 30px;
-        color: white;
-    } */
-
-    .icon-3-tag {
-        display: flex;
-        border-radius: 15px;
-        border: 1px solid white;
-        align-items: center;
-        justify-content: center;
-        width: 70px;
-        height: 40px;
-        font-size: 18px;
-        margin-bottom: 30px;
-        color: white;
-
-    }
-
-
-    .img-logo {
-        display: none;
-
-    }
-
-    /* .small-screen {
-        display: block;
-    } */
-
-
+  }
 }

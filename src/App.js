@@ -27,7 +27,7 @@ import CarUploaded from "./components/userAccount/CarUploaded";
 function App() {
   return (
     <FormContextProvider>
-      <div className="App">
+      <div className="App ">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />

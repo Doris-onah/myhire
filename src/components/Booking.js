@@ -2,7 +2,7 @@ import { GoChevronDown } from "react-icons/go";
 
 function Booking() {
   return (
-    <div className="md:flex md:justify-center md:items-center w-[100%] h-[180px]  hidden md:block text-black  ">
+    <div className="md:flex md:justify-center  md:items-center w-[100%] h-[180px]  hidden md:block text-black  ">
       <div className="w-[94%] h-[100%]  flex items-center justify-center bg-gray-100 rounded-[10px]">
         <section className="flex justify-center items-center h-[100%] w-[94%] ">
           <div className="flex items-center gap-8 md:w-[100%] w-[80%] justify-between h-[90%] ">

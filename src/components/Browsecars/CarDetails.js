@@ -2,15 +2,16 @@ import React from "react";
 // import { useState } from "react";
 // import { BsFillBookmarkFill, BsBookmark } from "react-icons/bs";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+
 function CarDetails(props) {
   const { product } = props;
   // const [bookmark, setBookmark] = useState(false);
   return (
     <div className="w-full ">
       {product && (
-        <div className=" flex justify-center pt-8 flex-col bg-gradient-to-r from-purple-600 to-pink-600">
+        <div className=" flex justify-center pt-8 flex-col ">
           <div className="w-full flex justify-center h-[100%]">
-            <div className="bg-white w-[80%] md:h-[656px] h-[400px] flex justify-between  text-black">
+            <div className="bg-white w-[80%] md:h-[500px] h-[300px] flex justify-between  text-black">
               <button>
                 <FiChevronLeft />
               </button>
