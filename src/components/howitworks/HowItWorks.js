@@ -11,13 +11,11 @@ function HowItWorks() {
     >
       <div className="location md:w-[100%] w-[85%] h-[80%] text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
         <div className="location-text">
-          {/* <div className="text-con"> */}
           <h1>How it Works</h1>
           <p>
-            Our high-performing 3-minutes model delivers your next
-            <br className="br" /> perfect Experience in 3 steps
+            Our high-performing 3-minutes model delivers your next perfect
+            Experience in 3 steps
           </p>
-          {/* </div> */}
         </div>
 
         <div className="maps-con">
@@ -53,7 +51,6 @@ function HowItWorks() {
             </div>
 
             <div>
-              {" "}
               <h1>Schedule Your Pick-up Date</h1>
               <p>
                 Bothered about Pick-Up dates? Need not to worry, we’ve got you

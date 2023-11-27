@@ -89,18 +89,15 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    /* background-color: red; */
   }
 
   .map-icon {
-    border-radius: 50px;
-    width: 70px;
-    height: 70px;
-    font-size: 40px;
+    border-radius: 100%;
+    width: 10%;
+    height: 40px;
+    font-size: 25px;
     /* background-color: peru; */
-  }
-
-  .br {
-    display: none;
   }
 
   .location-text {

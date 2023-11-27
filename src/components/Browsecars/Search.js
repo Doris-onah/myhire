@@ -2,9 +2,9 @@ function Search() {
   return (
     <div
       id="search"
-      className=" w-[100%] h-[20%] mt-8 flex items-center justify-center"
+      className=" w-[100%] md:h-[30%] h-[15%]  flex items-center justify-center"
     >
-      <div className="flex flex-col md:h-[160px] h-[100px] items-center justify-center w-full">
+      <div className="flex h-[70px] md:h-[100px] items-center justify-center w-full">
         <input
           type="text"
           placeholder="Search"

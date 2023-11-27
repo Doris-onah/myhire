@@ -10,7 +10,6 @@ import Header from "../header/Header";
 function HomePage() {
   return (
     <div className="w-full bg-gradient-to-r from-purple-600 to-pink-600">
-      {" "}
       <div className="fixed w-full  top-0 bg-gradient-to-r from-purple-600 to-pink-600">
         <Header />
       </div>

@@ -10,12 +10,9 @@ function WhyChooseUs() {
       id="choose"
       className="w-full text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl  h-[100vh] flex justify-center items-center"
     >
-      <div className="whychooseus  ">
+      <div className="whychooseus ">
         <div className="box1 ">
-          <h1
-            className="text-4xl font-semibold
-   md:block hidden"
-          >
+          <h1 className="text-4xl font-semibold md:block hidden">
             THIS IS WHAT STANDS US OUT
           </h1>
           <h1 className="md:hidden block text-4xl font-semibold">
@@ -25,7 +22,7 @@ function WhyChooseUs() {
             Asides being able to meet your need in 3 minutes in just 3 steps,
             you can count on our RELIABILITY, AFFORDABILITY and ACCESSIBILITY
           </p>
-          <p className="md:hidden block">
+          <p className="md:hidden block mt-4">
             A high-performing web-based car rental system for any rent-a-car
             company and website
           </p>

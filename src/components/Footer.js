@@ -5,7 +5,7 @@ import "./Footer.css";
 import logo from "../images/logo.png";
 function Footer() {
   return (
-    <div className="footer text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+    <div className="footer text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
       <div className="md:w-[100%] flex items-center justify-center md:h-[100%] md:flex  md:justify-around md:items-center bg-[#5D3578] text-white">
         <div className="w-[80%] md:w-[90%] md:h-[450px] h-[550px] ">
           <div className="mt-4 md:w-[100%] w-[100%] md:h-[80%]  md:flex md:justify-around md:items-center md:flex-row flex items-center  flex-col-reverse">

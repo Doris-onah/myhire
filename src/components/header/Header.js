@@ -5,13 +5,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 import logo from "../../images/logo.png";
 import "./Header.css";
-// import { useNavigate } from "react-router-dom";
+
 function Header() {
   const [menu, setMenu] = useState(true);
-  // const navigate = useNavigate();
-  // const home = () => {
-  //   navigate("/");
-  // };
 
   const handle = (e) => {
     setMenu(!menu);
