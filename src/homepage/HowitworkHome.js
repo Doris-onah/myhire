@@ -5,8 +5,8 @@ import { BsFillCarFrontFill } from "react-icons/bs";
 import { AiFillCalendar } from "react-icons/ai";
 function HowitworkHome() {
   return (
-    <div className=" h-[100vh] md:h-[100vh] w-[100%] flex justify-center items-center w-[100%] bg-gradient-to-r from-purple-600 to-pink-600">
-      <div className="location md:w-[100%] w-[85%] h-[90%] md:h-[80%]  text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
+    <div className=" h-[100vh] bg-red-900 md:h-[100vh] w-[100%] flex justify-center items-center w-[100%] bg-gradient-to-r from-purple-600 to-pink-600 ">
+      <div className="location  md:w-[100%] w-[90%] h-[100%] md:h-[80%]  text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
         <div className="location-text">
           <h1>How it Works</h1>
           <p>
