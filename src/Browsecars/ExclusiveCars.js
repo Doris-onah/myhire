@@ -1,10 +1,10 @@
 import React from "react";
 import AllCars from "./AllCars";
 import { useContext } from "react";
-import { FormContext } from "../userAccount/FormContext";
+import { FormContext } from "../formcontext/FormContext";
 function ExclusiveCars() {
   const { cars, prevPage, nextPage, page, pages } = useContext(FormContext);
-  const ExclusiveCars = cars.filter((car) => car.category === "exclusive");
+  const ExclusiveCars = cars.filter((car) => car.category === "sedan");
   console.log(ExclusiveCars);
   return (
     <div id="PopularCars">

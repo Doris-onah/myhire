@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
-import logo from "../../images/logo.png";
+import logo from "../images/logo.png";
 import { MdBookmark } from "react-icons/md";
 import { BsFillPersonFill } from "react-icons/bs";
 import { HiBars4 } from "react-icons/hi2";

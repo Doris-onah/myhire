@@ -1,10 +1,10 @@
 import React from "react";
 import AllCars from "./AllCars";
 import { useContext } from "react";
-import { FormContext } from "../userAccount/FormContext";
+import { FormContext } from "../formcontext/FormContext";
 function PopularCars() {
   const { cars, prevPage, nextPage, page, pages } = useContext(FormContext);
-  const popularCars = cars.filter((car) => car.category === "popular");
+  const popularCars = cars.filter((car) => car.category === "sedan");
   console.log(popularCars);
 
   return (

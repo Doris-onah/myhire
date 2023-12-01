@@ -1,15 +1,12 @@
 import React from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
-import PopularCars from "./PopularCars";
+import { Link, Outlet } from "react-router-dom";
+// import PopularCars from "../Browsecars/PopularCars";
 
-function Cars() {
-  const location = useLocation();
-  const path = location.pathname;
+function CarsHome() {
+  //   const location = useLocation();
+  //   const path = location.pathname;
   return (
-    <div
-      id="cars"
-      className="w-full h-[100vh] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center"
-    >
+    <div className="w-[100%]  h-[100vh] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center">
       <div className="flex md:w-[90%] h-[90%] flex-col items-center justify-center text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
         <div className="md:my-20">
           {/* larger screen section */}
@@ -36,14 +33,11 @@ function Cars() {
           <div className="flex flex items-between justify-center w-[100%] ">
             <ul className="flex text-2xl text-white items-between justify-center w-[100%] my-4">
               <li className="w-full text-center  ">
-                <Link to="/Cars/PopularCars" className="hidden md:block">
-                  Popular Car{" "}
+                <Link to="/Cars/popularcars" className="hidden md:block">
+                  Popular Car
                 </Link>
-                <Link
-                  to="/Cars/PopularCars"
-                  className="md:hidden block text-[15px]"
-                >
-                  Popular{" "}
+                <Link to="/Cars" className="md:hidden block text-[15px]">
+                  Popular
                 </Link>
               </li>
 
@@ -85,11 +79,11 @@ function Cars() {
             </ul>
           </div>
 
-          {path === "/" ? <PopularCars /> : ""}
+          {/* {path === "/" ? <PopularCars /> : ""} */}
           <Outlet />
         </div>
       </div>
     </div>
   );
 }
-export default Cars;
+export default CarsHome;

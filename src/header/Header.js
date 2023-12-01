@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
-import logo from "../../images/logo.png";
+import logo from "../images/logo.png";
 import "./Header.css";
 
 function Header() {
@@ -33,34 +33,50 @@ function Header() {
                   </span>
                 </li>{" "}
                 <li>
-                  <span className="link" onClick={() => setMenu(!menu)}>
-                    <a href="/#howitworks"> HowItWorks</a>
-                  </span>
-                </li>{" "}
+                  <Link
+                    to="/howitworks"
+                    className="link"
+                    onClick={() => setMenu(!menu)}
+                  >
+                    HowItWorks
+                  </Link>
+                </li>
                 <li>
-                  <span className="link" onClick={() => setMenu(!menu)}>
-                    <a href="/#cars">HireDetail</a>
-                  </span>
-                </li>{" "}
+                  <Link
+                    to="/Cars"
+                    className="link"
+                    onClick={() => setMenu(!menu)}
+                  >
+                    hireDetails
+                  </Link>{" "}
+                </li>
                 <li>
-                  <span className="link" onClick={() => setMenu(!menu)}>
-                    <a href="/#choose">WhyChooseUs</a>
-                  </span>
-                </li>{" "}
+                  <a
+                    href="/#choose"
+                    className="link"
+                    onClick={() => setMenu(!menu)}
+                  >
+                    whychooseus
+                  </a>
+                </li>
                 <li>
-                  <span className="link" onClick={() => setMenu(!menu)}>
-                    <a href="/#Review">Review</a>
-                  </span>
-                </li>{" "}
+                  <a
+                    href="/#Review"
+                    className="link"
+                    onClick={() => setMenu(!menu)}
+                  >
+                    Review
+                  </a>
+                </li>
                 <li>
                   {" "}
-                  <Link to="Register" onClick={() => setMenu(!menu)}>
+                  <Link to="/Register" onClick={() => setMenu(!menu)}>
                     Register
                   </Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="Login" onClick={() => setMenu(!menu)}>
+                  <Link to="/Login" onClick={() => setMenu(!menu)}>
                     Login
                   </Link>
                 </li>

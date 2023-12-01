@@ -1,15 +1,12 @@
-import "./Location.css";
+import "../howitworks/Location.css";
 
 import { IoLocationSharp } from "react-icons/io5";
 import { BsFillCarFrontFill } from "react-icons/bs";
 import { AiFillCalendar } from "react-icons/ai";
-function HowItWorks() {
+function HowitworkHome() {
   return (
-    <div
-      id="howitworks"
-      className="loco h-[100vh] flex justify-center items-center"
-    >
-      <div className="location md:w-[100%] w-[85%] h-[80%] text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
+    <div className=" h-[100vh] md:h-[100vh] w-[100%] flex justify-center items-center w-[100%] bg-gradient-to-r from-purple-600 to-pink-600">
+      <div className="location md:w-[100%] w-[85%] h-[90%] md:h-[80%]  text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
         <div className="location-text">
           <h1>How it Works</h1>
           <p>
@@ -23,10 +20,13 @@ function HowItWorks() {
             <div className="map-icon">
               <IoLocationSharp />
             </div>
-            <h1>Tell us your location</h1>
-            <p>
-              Tell us where you are to help us narrow down your Car Hire choices
-            </p>
+            <div className="map-icon-text">
+              <h1>Tell us your location</h1>
+              <p>
+                Tell us where you are to help us narrow down your Car Hire
+                choices
+              </p>
+            </div>
           </div>
 
           <div className="maps-lines">
@@ -79,12 +79,14 @@ function HowItWorks() {
               {" "}
               <BsFillCarFrontFill />{" "}
             </div>
-            <h1>Choose your date</h1>
-            <p>Select from our wide array of Cars, one that fit your needs</p>
+            <div>
+              <h1>Choose your date</h1>
+              <p>Select from our wide array of Cars, one that fit your needs</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-export default HowItWorks;
+export default HowitworkHome;

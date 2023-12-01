@@ -1,12 +1,12 @@
 import React from "react";
-import car from "../../images/car.png";
+import car from "../images/car.png";
 import { useNavigate } from "react-router-dom";
-import Search from "../Browsecars/Search";
+import Search from "../search/Search";
 function HeroSection() {
   const navigate = useNavigate();
 
   const hire = () => {
-    navigate("/#cars");
+    navigate("/cars");
   };
   return (
     <div
@@ -39,8 +39,7 @@ function HeroSection() {
                     onClick={hire}
                     className="w-[450px] h-[40px]  bg-white text-black  rounded-[5px]"
                   >
-                    {" "}
-                    <a href="/#cars"> Hire now!</a>
+                    Hire now!
                   </button>
                 </div>
               </div>
@@ -74,7 +73,7 @@ function HeroSection() {
                 onClick={hire}
                 className="w-[90%] h-[40px]  bg-white text-black  rounded-[5px]"
               >
-                <a href="/#cars"> Hire now!</a>
+                Hire now!
               </button>
             </div>
           </div>

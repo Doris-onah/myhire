@@ -1,28 +1,31 @@
 import "./App.css";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from ".//components/homepage/HomePage";
+import HomePage from "./homepage/HomePage";
 import Layout from "./components/Layout";
 import Register from "./components/Register";
 import Login from "./components/Login";
-import SedanCars from "../src/components/Browsecars/SedanCars";
-import SuvsCars from "../src/components/Browsecars/SuvsCars";
-import ExclusiveCars from "../src/components/Browsecars/ExclusiveCars";
-import PopularCars from "../src/components/Browsecars/PopularCars";
-import Account from "./components/userAccount/Account";
-import UserProfile from "./components/userAccount/UserProfile";
-import Followers from "./components/Userprofile/Followers";
-import MyFaq from "./components/Userprofile/MyFaq";
-import FeedBack from "./components/Userprofile/FeedBack";
-import MyVehicle from "./components/Userprofile/MyVehicle";
-import MyAdvert from "./components/Userprofile/MyAdvert";
-import Notifications from "./components/userAccount/Notifications";
-import Bookmark from "./components/userAccount/Bookmark";
-import Chat from "./components/userAccount/Chat";
-import UserMenu from "./components/userAccount/UserMenu";
-import UploadCar from "./components/userAccount/UploadCar";
-import FormContextProvider from "./components/userAccount/FormContext";
-import CarUploaded from "./components/userAccount/CarUploaded";
+import SedanCars from "./Browsecars/SedanCars";
+import SuvsCars from "./Browsecars/SuvsCars";
+import ExclusiveCars from "./Browsecars/ExclusiveCars";
+import PopularCars from "./Browsecars/PopularCars";
+import Account from "./userAccount/Account";
+import UserProfile from "./userAccount/UserProfile";
+import Followers from "./Userprofile/Followers";
+import MyFaq from "./Userprofile/MyFaq";
+import FeedBack from "./Userprofile/FeedBack";
+import MyVehicle from "./Userprofile/MyVehicle";
+import MyAdvert from "./Userprofile/MyAdvert";
+import Notifications from "./userAccount/Notifications";
+import Bookmark from "./userAccount/Bookmark";
+import Chat from "./userAccount/Chat";
+import UserMenu from "./userAccount/UserMenu";
+import UploadCar from "./userAccount/UploadCar";
+import FormContextProvider from "./formcontext/FormContext";
+import CarUploaded from "./userAccount/CarUploaded";
+import HowItWorks from "./howitworks/HowItWorks";
+
+import Cars from "./Browsecars/Cars";
 
 function App() {
   return (
@@ -31,12 +34,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
-            <Route path="Cars" element={<HomePage />}>
-              <Route index path="PopularCars" element={<PopularCars />} />
+            <Route path="Cars" element={<Cars />}>
+              <Route index element={<PopularCars />} />
               <Route path="SuvsCars" element={<SuvsCars />} />
               <Route path="SedanCars" element={<SedanCars />} />{" "}
               <Route path="ExclusiveCars" element={<ExclusiveCars />} />
             </Route>
+            <Route path="howitworks" element={<HowItWorks />} />
+
+            <Route path="Register" element={<Register />} />
+            <Route path="Login" element={<Login />} />
             <Route path="CarUploaded" element={<CarUploaded />}>
               <Route
                 path="/CarUploaded/:CarUploadedId"
@@ -57,8 +64,6 @@ function App() {
                 <Route path="MyVehicle" element={<MyVehicle />} />
               </Route>{" "}
             </Route>
-            <Route path="Register" element={<Register />} />
-            <Route path="Login" element={<Login />} />
           </Route>
         </Routes>{" "}
       </div>

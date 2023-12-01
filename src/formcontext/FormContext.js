@@ -7,7 +7,7 @@ export const FormContext = createContext();
 function FormContextProvider(props) {
   const [cars, setCars] = useState([]);
   const [page, setPage] = useState(1);
-
+  const [searchInput, setSearchInput] = useState("");
   const pages = 50;
   useEffect(() => {
     fetch(`https://myhireng1.pythonanywhere.com/api/v1/car/`)
@@ -35,15 +35,26 @@ function FormContextProvider(props) {
       setPage(page + 1);
     }
   };
+  // serchcompoennt;
+
+  const handleOnChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+  // const filtered = cars.filter((car) => {
+  //   return car.toLowerCase().includes(searchInput.toLowerCase());
+  // });
 
   const value = {
     cars,
+    // filtered,
     page,
     prevPage,
     nextPage,
     PER_PAGE,
     skip,
     pages,
+    handleOnChange,
+    searchInput,
   };
 
   return (
