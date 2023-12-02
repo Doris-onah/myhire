@@ -9,14 +9,14 @@ function WhychooseHome() {
   return (
     <div
       id="choose"
-      className="w-[100%] text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl  h-[80vh] md:h-[100vh] flex justify-center items-center  bg-gradient-to-r from-purple-700 to-pink-600"
+      className="w-[100%] text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl  h-[80vh] md:h-[80vh] flex justify-center items-center  bg-gradient-to-r from-purple-700 to-pink-700"
     >
       <div className="whychooseus ">
         <div className="box1  ">
           <h1 className="text-4xl font-semibold md:block hidden">
             THIS IS WHAT STANDS US OUT
           </h1>
-          <h1 className="md:hidden block text-4xl font-semibold">
+          <h1 className="md:hidden block text-3xl font-semibold">
             Why choose us
           </h1>
           <p className="text-[15px] md:block hidden">

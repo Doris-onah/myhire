@@ -1,14 +1,12 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-// import PopularCars from "../Browsecars/PopularCars";
+import Search from "../search/Search";
 
 function CarsHome() {
-  //   const location = useLocation();
-  //   const path = location.pathname;
   return (
-    <div className="w-[100%]  h-[100vh] bg-gradient-to-r from-purple-800 to-pink-600 font-plus-jakarta-sans  flex items-center justify-center">
-      <div className="flex md:w-[90%] h-[90%] flex-col items-center justify-center text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-        <div className="md:my-20">
+    <div className="w-[100%]  h-[100vh] bg-gradient-to-r from-purple-600 to-pink-700 font-plus-jakarta-sans  flex items-center justify-center">
+      <div className="flex md:w-[90%] w-[90%] h-[90%] flex-col items-center justify-center text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+        <div className="">
           {/* larger screen section */}
           <div className="hidden md:block">
             <h1 className="text-4xl font-semibold text-white">
@@ -28,7 +26,7 @@ function CarsHome() {
             </h1>
           </div>
         </div>
-
+        <Search />
         <div className=" flex-row items-between justify-center w-full h-[100%] ">
           <div className="flex flex items-between justify-center w-[100%] ">
             <ul className="flex text-2xl text-white items-between justify-center w-[100%] my-4">
@@ -79,7 +77,6 @@ function CarsHome() {
             </ul>
           </div>
 
-          {/* {path === "/" ? <PopularCars /> : ""} */}
           <Outlet />
         </div>
       </div>

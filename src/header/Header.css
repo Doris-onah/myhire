@@ -33,6 +33,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 80%;
+  /* background-color: red; */
 }
 li,
 a {
@@ -48,7 +49,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 870px) {
   ul {
     display: none;
   }

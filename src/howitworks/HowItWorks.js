@@ -6,7 +6,7 @@ import HowitworkHome from "../homepage/HowitworkHome";
 import ReviewHome from "../homepage/ReviewHome";
 function HowItWorks() {
   return (
-    <div className="loco h-[100%] flex-col justify-center items-center w-full bg-gradient-to-r from-purple-600 to-pink-600">
+    <div className="h-[100%] flex-col justify-center items-center w-[100%] ">
       <Header />
       <HowitworkHome />
       <Booking />

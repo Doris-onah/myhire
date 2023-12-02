@@ -26,6 +26,8 @@ import CarUploaded from "./userAccount/CarUploaded";
 import HowItWorks from "./howitworks/HowItWorks";
 
 import Cars from "./Browsecars/Cars";
+import Review from "./reviewcomponent/Review";
+import WhyChoose from "./choose/WhyChoose";
 
 function App() {
   return (
@@ -41,7 +43,8 @@ function App() {
               <Route path="ExclusiveCars" element={<ExclusiveCars />} />
             </Route>
             <Route path="howitworks" element={<HowItWorks />} />
-
+            <Route path="choose" element={<WhyChoose />} />
+            <Route path="review" element={<Review />} />
             <Route path="Register" element={<Register />} />
             <Route path="Login" element={<Login />} />
             <Route path="CarUploaded" element={<CarUploaded />}>

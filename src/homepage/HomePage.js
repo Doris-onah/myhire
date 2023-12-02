@@ -9,8 +9,8 @@ import CarsHome from "../homepage/CarsHome";
 import WhychooseHome from "./WhychooseHome";
 function HomePage() {
   return (
-    <div className="w-full bg-gradient-to-r from-purple-600 to-pink-600">
-      <div className="fixed w-[100%]  top-0 bg-gradient-to-r from-purple-600 to-pink-600">
+    <div className="w-[100%]">
+      <div className="fixed w-[100%]  top-0 ">
         <Header />
       </div>
       <HeroSection />

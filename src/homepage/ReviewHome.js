@@ -5,9 +5,9 @@ function ReviewHome() {
   return (
     <div
       id="Review"
-      className="w-[100%] md:h-[70vh] h-[100vh]  flex flex-col items-center justify-center"
+      className="w-[100%] md:h-[70vh] h-[100vh]  flex flex-col items-center justify-center bg-gradient-to-r from-purple-600 to-pink-700"
     >
-      <div className="text-white font-extrabold  w-[90%] md:w-[30%] text-center flex-col justify-center ">
+      <div className="text-white font-extrabold  w-[100%] md:w-[30%] text-center flex-col justify-center ">
         <h1 className="md:text-4xl text-2xl">
           See What Our Trusted Customers Are Saying
         </h1>{" "}

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 function AllCars({ car, prevPage, nextPage, page, pages, index }) {
   return (
-    <div id="PopularCars">
-      <div className="flex w-full h-[100%]   md:grid md:grid-cols-4 gap-4 grid grid-cols-1">
+    <div id="PopularCars" className=" flex-row justify-center items-center">
+      <div className="flex w-[100%] h-[100%]  md:grid md:grid-cols-4 gap-4 grid grid-cols-1">
         <div
           className=" md:w-[100%] md:h-[100%] h-[250px] bg-gray-200 md:bg-inherit  rounded-[20px] flex items-center justify-center "
           key={index}

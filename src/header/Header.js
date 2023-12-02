@@ -14,7 +14,7 @@ function Header() {
     e.preventDefault();
   };
   return (
-    <div className="header text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl w-full ">
+    <div className="header text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl w-full bg-gradient-to-r from-purple-600 to-pink-700">
       <div className="header-con items-center ">
         <div className="head flex md:justify-center justify-between items-center w-[100%] h-[100%] ">
           <div className=" header__left h-[90%] md:w-[20%] w-[30%] flex justify-center ">
@@ -51,22 +51,22 @@ function Header() {
                   </Link>{" "}
                 </li>
                 <li>
-                  <a
-                    href="/#choose"
+                  <Link
+                    to="/choose"
                     className="link"
                     onClick={() => setMenu(!menu)}
                   >
                     whychooseus
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/#Review"
+                  <Link
+                    to="/review"
                     className="link"
                     onClick={() => setMenu(!menu)}
                   >
                     Review
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   {" "}
