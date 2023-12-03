@@ -4,11 +4,11 @@ import { TiSocialInstagram } from "react-icons/ti";
 import logo from "../images/logo.png";
 function Footer() {
   return (
-    <div className="w-[100%] md:h-[50vh] h-[60vh] bg-gradient-to-r from-purple-700 to-pink-600  flex justify-center items-center flex-col text-white ">
-      <div className="flex  md:h-[80%] h-[80%] w-[90%] md:flex-row flex-col-reverse items-center justify-around">
+    <div className="w-[100%] h-[50vh]  bg-gradient-to-r from-purple-700 to-pink-600  flex justify-center items-center flex-col text-white ">
+      <div className="flex  h-[80%] w-[90%] md:flex-row flex-col-reverse items-center justify-around">
         <div className="w-[100%] h-[55%] md:h-[90%] md:w-[30%] flex  items-center md:justify-start  justify-center">
           {" "}
-          <div className="w-[100%]  md:w-[80%] md:h-[100%] h-[100%] flex-col text-center  flex justify-center">
+          <div className="w-[100%]  md:w-[80%] h-[100%] flex-col text-center  flex justify-center">
             <div className=" flex items-center justify-center h-[50%] md:w-[60%]">
               <img src={logo} className="w-[70%]  h-[100%] " alt="logo" />
             </div>

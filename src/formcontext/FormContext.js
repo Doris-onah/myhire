@@ -40,13 +40,13 @@ function FormContextProvider(props) {
   const handleOnChange = (e) => {
     setSearchInput(e.target.value);
   };
-  // const filtered = cars.filter((car) => {
-  //   return car.toLowerCase().includes(searchInput.toLowerCase());
-  // });
 
+  const filtered = cars.filter((car) =>
+    car.name.toLowerCase().includes(searchInput.toLowerCase())
+  );
   const value = {
     cars,
-    // filtered,
+    filtered,
     page,
     prevPage,
     nextPage,

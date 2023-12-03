@@ -5,10 +5,6 @@ import HomePage from "./homepage/HomePage";
 import Layout from "./components/Layout";
 import Register from "./components/Register";
 import Login from "./components/Login";
-import SedanCars from "./Browsecars/SedanCars";
-import SuvsCars from "./Browsecars/SuvsCars";
-import ExclusiveCars from "./Browsecars/ExclusiveCars";
-import PopularCars from "./Browsecars/PopularCars";
 import Account from "./userAccount/Account";
 import UserProfile from "./userAccount/UserProfile";
 import Followers from "./Userprofile/Followers";
@@ -36,12 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
-            <Route path="Cars" element={<Cars />}>
-              <Route index element={<PopularCars />} />
-              <Route path="SuvsCars" element={<SuvsCars />} />
-              <Route path="SedanCars" element={<SedanCars />} />{" "}
-              <Route path="ExclusiveCars" element={<ExclusiveCars />} />
-            </Route>
+            <Route path="Cars" element={<Cars />} />
             <Route path="howitworks" element={<HowItWorks />} />
             <Route path="choose" element={<WhyChoose />} />
             <Route path="review" element={<Review />} />
